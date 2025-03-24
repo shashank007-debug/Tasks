@@ -1,17 +1,25 @@
 package com.xworkz.country;
 
 public class House {
-    String address = "Default Address";
-    int houseNo = 0;
-    int floorCount = 2;
-    boolean hasGarden = true;
+    String address;
+    int houseNo;
+    int floorCount;
+    boolean hasGarden;
+    Room[] rooms;
 
-    Room room1 = new Room("Bedroom", 101, 200.0, true);
-    Room room2 = new Room("Hall", 102, 300.0, false);
-    Room room3 = new Room("Kitchen", 103, 150.0, true);
-    Room room4 = new Room("Bathroom", 104, 100.0, false);
-    Room room5 = new Room("Balcony", 105, 120.0, false);
-    Room[] rooms = {room1, room2, room3, room4, room5};
+    House(String address, int houseNo, int floorCount, boolean hasGarden) {
+        this.address = address;
+        this.houseNo = houseNo;
+        this.floorCount = floorCount;
+        this.hasGarden = hasGarden;
+        this.rooms = new Room[]{
+                new Room("Bedroom", 101, 200.0, true),
+                new Room("Hall", 102, 300.0, false),
+                new Room("Kitchen", 103, 150.0, true),
+                new Room("Bathroom", 104, 100.0, false),
+                new Room("Balcony", 105, 120.0, false)
+        };
+    }
 
     void display() {
         System.out.println("House Address: " + this.address);

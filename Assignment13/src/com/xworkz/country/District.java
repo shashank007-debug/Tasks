@@ -5,19 +5,20 @@ public class District {
     int districtCode;
     int population;
     boolean isUrban;
-
-    City city1 = new City("CityA", 500000, 300.5, true);
-    City city2 = new City("CityB", 200000, 180.0, false);
-    City city3 = new City("CityC", 350000, 210.0, false);
-    City city4 = new City("CityD", 150000, 150.0, false);
-    City city5 = new City("CityE", 100000, 100.0, false);
-    City[] cities = {city1, city2, city3, city4, city5};
+    City[] cities;
 
     District(String name, int districtCode, int population, boolean isUrban) {
         this.name = name;
         this.districtCode = districtCode;
         this.population = population;
         this.isUrban = isUrban;
+        this.cities = new City[]{
+                new City("CityA", 500000, 300.5, true),
+                new City("CityB", 200000, 180.0, false),
+                new City("CityC", 350000, 210.0, false),
+                new City("CityD", 150000, 150.0, false),
+                new City("CityE", 100000, 100.0, false)
+        };
     }
 
     void display() {
