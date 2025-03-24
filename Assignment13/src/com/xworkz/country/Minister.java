@@ -28,10 +28,12 @@ public class Minister {
         for(PersonalAssistant personalAssistant : personalAssistants){
             System.out.println("The Personal Assistant for Minister : "+this.name+ " is : "+personalAssistant.name);
             personalAssistant.display();
+            System.out.println("=====================================================================================");
         }
         for(Portfolio portfolio : portfolios){
             System.out.println("The Portfolio for Minister : "+this.name+ " is : "+portfolio.name);
             portfolio.display();
+            System.out.println("=====================================================================================");
         }
     }
 

@@ -20,11 +20,13 @@ public class PrimeMinister {
         System.out.println("The PrimeMinister name is : "+this.name);
         System.out.println("The PrimeMinister age is : "+this.age);
         System.out.println("The PrimeMinister termYears is :"+this.termYears);
+        System.out.println("=====================================================================================");
 
         for(Minister minister : ministers){
             System.out.println("The Minister name is : "+minister.name);
             System.out.println("The Minister ministery is : "+minister.ministry);
             minister.display();
+            System.out.println("=====================================================================================");
         }
 
     }

@@ -13,7 +13,12 @@ public class Country {
     }
 
     void display(){
+        System.out.println("The name of the country is : "+this.name);
+        System.out.println("The population of the : "+this.name+" is :"+this.population);
+        System.out.println("The Currency  of "+this.name+" Country is : "+this.currency);
+        System.out.println("=====================================================================================");
         primeMinister.display();
+        System.out.println("=====================================================================================");
 
     }
 }

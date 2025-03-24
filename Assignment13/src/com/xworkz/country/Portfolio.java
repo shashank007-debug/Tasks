@@ -29,10 +29,12 @@ public class Portfolio {
         for(Details detail : details){
             System.out.println("Printing details of Portfolio name : "+this.name);
             detail.display();
+            System.out.println("=====================================================================================");
         }
         for(House house : houses){
             System.out.println("Printing house of Portfolio name : "+this.name);
             house.display();
+            System.out.println("=====================================================================================");
         }
     }
 }

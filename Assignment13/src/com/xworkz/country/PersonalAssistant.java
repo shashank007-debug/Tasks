@@ -21,11 +21,13 @@ public class PersonalAssistant {
     void display(){
         System.out.println("The name of Personal Assistant is : "+this.name);
         System.out.println("The employee ID of Personal Assistant is : "+this.employeeId);
+        System.out.println("=====================================================================================");
 
         for(House house : houses){
             house.display();
             System.out.println("=======================================================");
             security.display();
+            System.out.println("=====================================================================================");
         }
 
     }
