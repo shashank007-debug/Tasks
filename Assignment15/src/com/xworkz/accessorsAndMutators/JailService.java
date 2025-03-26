@@ -17,6 +17,6 @@ public class JailService {
         jail.setJailerName("Nikhil");
         jail.setTotalCells(38);
 
-        processJail(jail);  // Passing the local object to another method
+        processJail(jail);  // Passing the local reference to another method
     }
 }

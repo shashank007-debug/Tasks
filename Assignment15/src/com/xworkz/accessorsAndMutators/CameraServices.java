@@ -17,6 +17,6 @@ public class CameraServices {
         camera.setType(CameraType.DSLR);
         camera.setConnectivity("Wi-Fi");
 
-        processCamera(camera);  // Passing the local object as a parameter
+        processCamera(camera);  // Passing the local reference as a parameter
     }
 }
