@@ -55,7 +55,11 @@ public class Runner {
 
         System.out.println("\n===== ANIMAL HIERARCHY =====");
         Animal animal = new Animal();
-        animal.eat(); animal.sleep(); animal.move(); animal.breathe(); animal.makeSound();
+        animal.eat();
+        animal.sleep();
+        animal.move();
+        animal.breathe();
+        animal.makeSound();
 
         Dog dog = new Dog();
         dog.bark();
@@ -101,8 +105,11 @@ public class Runner {
 
         System.out.println("\n===== ELECTRONIC DEVICE HIERARCHY =====");
         ElectronicDevice electronicDevice = new ElectronicDevice();
-        electronicDevice.powerOn(); electronicDevice.powerOff(); electronicDevice.charge();
-        electronicDevice.updateSoftware(); electronicDevice.connectWifi();
+        electronicDevice.powerOn();
+        electronicDevice.powerOff();
+        electronicDevice.charge();
+        electronicDevice.updateSoftware();
+        electronicDevice.connectWifi();
 
         Smartphone smartphone = new Smartphone();
         smartphone.makeCall();
@@ -133,7 +140,11 @@ public class Runner {
 
         System.out.println("\n===== FURNITURE HIERARCHY =====");
         Furniture furniture = new Furniture();
-        furniture.assemble(); furniture.disassemble(); furniture.clean(); furniture.move(); furniture.repair();
+        furniture.assemble();
+        furniture.disassemble();
+        furniture.clean();
+        furniture.move();
+        furniture.repair();
 
         Chair chair = new Chair();
         chair.sit();
@@ -171,13 +182,25 @@ public class Runner {
         System.out.println("===== APPLIANCE HIERARCHY =====");
 
         Appliance appliance = new Appliance();
-        appliance.plugIn(); appliance.turnOn(); appliance.turnOff(); appliance.clean(); appliance.repair();
+        appliance.plugIn();
+        appliance.turnOn();
+        appliance.turnOff();
+        appliance.clean();
+        appliance.repair();
 
         Appliance fridgeParentRef = new Refrigerator();
-        fridgeParentRef.plugIn(); fridgeParentRef.turnOn(); fridgeParentRef.turnOff(); fridgeParentRef.clean(); fridgeParentRef.repair();
+        fridgeParentRef.plugIn();
+        fridgeParentRef.turnOn();
+        fridgeParentRef.turnOff();
+        fridgeParentRef.clean();
+        fridgeParentRef.repair();
 
         Appliance microwaveParentRef = new Microwave();
-        microwaveParentRef.plugIn(); microwaveParentRef.turnOn(); microwaveParentRef.turnOff(); microwaveParentRef.clean(); microwaveParentRef.repair();
+        microwaveParentRef.plugIn();
+        microwaveParentRef.turnOn();
+        microwaveParentRef.turnOff();
+        microwaveParentRef.clean();
+        microwaveParentRef.repair();
 
         Refrigerator fridge = new Refrigerator();
         fridge.coolFood();
@@ -211,13 +234,25 @@ public class Runner {
 
         System.out.println("\n===== CLOTHING HIERARCHY =====");
         Clothing clothing = new Clothing();
-        clothing.wear(); clothing.wash(); clothing.dry(); clothing.iron(); clothing.fold();
+        clothing.wear();
+        clothing.wash();
+        clothing.dry();
+        clothing.iron();
+        clothing.fold();
 
         Clothing shirtParentRef = new Shirt();
-        shirtParentRef.wear(); shirtParentRef.wash(); shirtParentRef.dry(); shirtParentRef.iron(); shirtParentRef.fold();
+        shirtParentRef.wear();
+        shirtParentRef.wash();
+        shirtParentRef.dry();
+        shirtParentRef.iron();
+        shirtParentRef.fold();
 
         Clothing jeansParentRef = new Jeans();
-        jeansParentRef.wear(); jeansParentRef.wash(); jeansParentRef.dry(); jeansParentRef.iron(); jeansParentRef.fold();
+        jeansParentRef.wear();
+        jeansParentRef.wash();
+        jeansParentRef.dry();
+        jeansParentRef.iron();
+        jeansParentRef.fold();
 
         Shirt shirt = new Shirt();
         shirt.buttonUp();
@@ -251,13 +286,25 @@ public class Runner {
 
         System.out.println("\n===== PLANT HIERARCHY =====");
         Plant plant = new Plant();
-        plant.water(); plant.grow(); plant.prune(); plant.fertilize(); plant.harvest();
+        plant.water();
+        plant.grow();
+        plant.prune();
+        plant.fertilize();
+        plant.harvest();
 
         Plant roseParentRef = new Rose();
-        roseParentRef.water(); roseParentRef.grow(); roseParentRef.prune(); roseParentRef.fertilize(); roseParentRef.harvest();
+        roseParentRef.water();
+        roseParentRef.grow();
+        roseParentRef.prune();
+        roseParentRef.fertilize();
+        roseParentRef.harvest();
 
         Plant oakParentRef = new Oak();
-        oakParentRef.water(); oakParentRef.grow(); oakParentRef.prune(); oakParentRef.fertilize(); oakParentRef.harvest();
+        oakParentRef.water();
+        oakParentRef.grow();
+        oakParentRef.prune();
+        oakParentRef.fertilize();
+        oakParentRef.harvest();
 
         Rose rose = new Rose();
         rose.bloom();
@@ -291,13 +338,25 @@ public class Runner {
 
         System.out.println("\n===== TOOL HIERARCHY =====");
         Tool tool = new Tool();
-        tool.grip(); tool.use(); tool.sharpen(); tool.clean(); tool.store();
+        tool.grip();
+        tool.use();
+        tool.sharpen();
+        tool.clean();
+        tool.store();
 
         Tool hammerParentRef = new Hammer();
-        hammerParentRef.grip(); hammerParentRef.use(); hammerParentRef.sharpen(); hammerParentRef.clean(); hammerParentRef.store();
+        hammerParentRef.grip();
+        hammerParentRef.use();
+        hammerParentRef.sharpen();
+        hammerParentRef.clean();
+        hammerParentRef.store();
 
         Tool screwdriverParentRef = new Screwdriver();
-        screwdriverParentRef.grip(); screwdriverParentRef.use(); screwdriverParentRef.sharpen(); screwdriverParentRef.clean(); screwdriverParentRef.store();
+        screwdriverParentRef.grip();
+        screwdriverParentRef.use();
+        screwdriverParentRef.sharpen();
+        screwdriverParentRef.clean();
+        screwdriverParentRef.store();
 
         Hammer hammer = new Hammer();
         hammer.nail();
@@ -331,13 +390,25 @@ public class Runner {
 
         System.out.println("\n===== MUSICAL INSTRUMENT HIERARCHY =====");
         MusicalInstrument instrument = new MusicalInstrument();
-        instrument.tune(); instrument.play(); instrument.clean(); instrument.store(); instrument.repair();
+        instrument.tune();
+        instrument.play();
+        instrument.clean();
+        instrument.store();
+        instrument.repair();
 
         MusicalInstrument guitarParentRef = new Guitar();
-        guitarParentRef.tune(); guitarParentRef.play(); guitarParentRef.clean(); guitarParentRef.store(); guitarParentRef.repair();
+        guitarParentRef.tune();
+        guitarParentRef.play();
+        guitarParentRef.clean();
+        guitarParentRef.store();
+        guitarParentRef.repair();
 
         MusicalInstrument pianoParentRef = new Piano();
-        pianoParentRef.tune(); pianoParentRef.play(); pianoParentRef.clean(); pianoParentRef.store(); pianoParentRef.repair();
+        pianoParentRef.tune();
+        pianoParentRef.play();
+        pianoParentRef.clean();
+        pianoParentRef.store();
+        pianoParentRef.repair();
 
         Guitar guitar = new Guitar();
         guitar.strum();
