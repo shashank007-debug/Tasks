@@ -1,9 +1,13 @@
 package com.xworkz.inheritance.runner;
-import com.xworkz.inheritance.internal.*;
 import com.xworkz.inheritance.internal.vehicle.*;
 import com.xworkz.inheritance.internal.animal.*;
 import com.xworkz.inheritance.internal.furniture.*;
 import com.xworkz.inheritance.internal.electronicdevice.*;
+import com.xworkz.inheritance.internal.musicalInstrument.*;
+import com.xworkz.inheritance.internal.tools.*;
+import com.xworkz.inheritance.internal.plant.*;
+import com.xworkz.inheritance.internal.appliance.*;
+import com.xworkz.inheritance.internal.clothing.*;
 
 
 public class Runner {
@@ -163,5 +167,211 @@ public class Runner {
 
         Nightstand nightstand = new Nightstand();
         nightstand.placeLamp();
+
+        System.out.println("===== APPLIANCE HIERARCHY =====");
+
+        Appliance appliance = new Appliance();
+        appliance.plugIn(); appliance.turnOn(); appliance.turnOff(); appliance.clean(); appliance.repair();
+
+        Appliance fridgeParentRef = new Refrigerator();
+        fridgeParentRef.plugIn(); fridgeParentRef.turnOn(); fridgeParentRef.turnOff(); fridgeParentRef.clean(); fridgeParentRef.repair();
+
+        Appliance microwaveParentRef = new Microwave();
+        microwaveParentRef.plugIn(); microwaveParentRef.turnOn(); microwaveParentRef.turnOff(); microwaveParentRef.clean(); microwaveParentRef.repair();
+
+        Refrigerator fridge = new Refrigerator();
+        fridge.coolFood();
+
+        Microwave microwave = new Microwave();
+        microwave.heatFood();
+
+        WashingMachine washer = new WashingMachine();
+        washer.washClothes();
+
+        Dishwasher dishwasher = new Dishwasher();
+        dishwasher.washDishes();
+
+        Oven oven = new Oven();
+        oven.bake();
+
+        Toaster toaster = new Toaster();
+        toaster.toastBread();
+
+        Blender blender = new Blender();
+        blender.blend();
+
+        CoffeeMaker coffeeMaker = new CoffeeMaker();
+        coffeeMaker.brewCoffee();
+
+        AirFryer airFryer = new AirFryer();
+        airFryer.airFry();
+
+        VacuumCleaner vacuum = new VacuumCleaner();
+        vacuum.vacuum();
+
+        System.out.println("\n===== CLOTHING HIERARCHY =====");
+        Clothing clothing = new Clothing();
+        clothing.wear(); clothing.wash(); clothing.dry(); clothing.iron(); clothing.fold();
+
+        Clothing shirtParentRef = new Shirt();
+        shirtParentRef.wear(); shirtParentRef.wash(); shirtParentRef.dry(); shirtParentRef.iron(); shirtParentRef.fold();
+
+        Clothing jeansParentRef = new Jeans();
+        jeansParentRef.wear(); jeansParentRef.wash(); jeansParentRef.dry(); jeansParentRef.iron(); jeansParentRef.fold();
+
+        Shirt shirt = new Shirt();
+        shirt.buttonUp();
+
+        Jeans jeans = new Jeans();
+        jeans.rollCuffs();
+
+        Dress dress = new Dress();
+        dress.zipUp();
+
+        Jacket jacket = new Jacket();
+        jacket.zip();
+
+        Sweater sweater = new Sweater();
+        sweater.knit();
+
+        Shorts shorts = new Shorts();
+        shorts.adjustWaist();
+
+        Skirt skirt = new Skirt();
+        skirt.twirl();
+
+        Socks socks = new Socks();
+        socks.pair();
+
+        Underwear underwear = new Underwear();
+        underwear.layer();
+
+        Hat hat = new Hat();
+        hat.tip();
+
+        System.out.println("\n===== PLANT HIERARCHY =====");
+        Plant plant = new Plant();
+        plant.water(); plant.grow(); plant.prune(); plant.fertilize(); plant.harvest();
+
+        Plant roseParentRef = new Rose();
+        roseParentRef.water(); roseParentRef.grow(); roseParentRef.prune(); roseParentRef.fertilize(); roseParentRef.harvest();
+
+        Plant oakParentRef = new Oak();
+        oakParentRef.water(); oakParentRef.grow(); oakParentRef.prune(); oakParentRef.fertilize(); oakParentRef.harvest();
+
+        Rose rose = new Rose();
+        rose.bloom();
+
+        Oak oak = new Oak();
+        oak.shedLeaves();
+
+        Tulip tulip = new Tulip();
+        tulip.openPetals();
+
+        Cactus cactus = new Cactus();
+        cactus.storeWater();
+
+        Pine pine = new Pine();
+        pine.dropCones();
+
+        Sunflower sunflower = new Sunflower();
+        sunflower.trackSun();
+
+        Bamboo bamboo = new Bamboo();
+        bamboo.growTall();
+
+        Fern fern = new Fern();
+        fern.unfurl();
+
+        Aloe aloe = new Aloe();
+        aloe.soothe();
+
+        Maple maple = new Maple();
+        maple.changeColor();
+
+        System.out.println("\n===== TOOL HIERARCHY =====");
+        Tool tool = new Tool();
+        tool.grip(); tool.use(); tool.sharpen(); tool.clean(); tool.store();
+
+        Tool hammerParentRef = new Hammer();
+        hammerParentRef.grip(); hammerParentRef.use(); hammerParentRef.sharpen(); hammerParentRef.clean(); hammerParentRef.store();
+
+        Tool screwdriverParentRef = new Screwdriver();
+        screwdriverParentRef.grip(); screwdriverParentRef.use(); screwdriverParentRef.sharpen(); screwdriverParentRef.clean(); screwdriverParentRef.store();
+
+        Hammer hammer = new Hammer();
+        hammer.nail();
+
+        Screwdriver screwdriver = new Screwdriver();
+        screwdriver.twist();
+
+        Wrench wrench = new Wrench();
+        wrench.tighten();
+
+        Pliers pliers = new Pliers();
+        pliers.clamp();
+
+        Saw saw = new Saw();
+        saw.cut();
+
+        Drill drill = new Drill();
+        drill.bore();
+
+        Axe axe = new Axe();
+        axe.chop();
+
+        Shovel shovel = new Shovel();
+        shovel.dig();
+
+        Rake rake = new Rake();
+        rake.gather();
+
+        Chisel chisel = new Chisel();
+        chisel.carve();
+
+        System.out.println("\n===== MUSICAL INSTRUMENT HIERARCHY =====");
+        MusicalInstrument instrument = new MusicalInstrument();
+        instrument.tune(); instrument.play(); instrument.clean(); instrument.store(); instrument.repair();
+
+        MusicalInstrument guitarParentRef = new Guitar();
+        guitarParentRef.tune(); guitarParentRef.play(); guitarParentRef.clean(); guitarParentRef.store(); guitarParentRef.repair();
+
+        MusicalInstrument pianoParentRef = new Piano();
+        pianoParentRef.tune(); pianoParentRef.play(); pianoParentRef.clean(); pianoParentRef.store(); pianoParentRef.repair();
+
+        Guitar guitar = new Guitar();
+        guitar.strum();
+
+        Piano piano = new Piano();
+        piano.pressKeys();
+
+        Violin violin = new Violin();
+        violin.bow();
+
+        Drums drums = new Drums();
+        drums.beat();
+
+        Flute flute = new Flute();
+        flute.blow();
+
+        Trumpet trumpet = new Trumpet();
+        trumpet.buzz();
+
+        Saxophone saxophone = new Saxophone();
+        saxophone.reed();
+
+        Cello cello = new Cello();
+        cello.vibrato();
+
+        Harp harp = new Harp();
+        harp.pluck();
+
+        Clarinet clarinet = new Clarinet();
+        clarinet.reed();
+
+        Trombone trombone = new Trombone();
+        trombone.slide();
+
+
     }
 }
