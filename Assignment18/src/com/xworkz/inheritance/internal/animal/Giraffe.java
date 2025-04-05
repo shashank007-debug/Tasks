@@ -1,12 +1,24 @@
 package com.xworkz.inheritance.internal.animal;
 
 public class Giraffe extends Animal {
-    public void stretch() {
-        super.eat();
-        super.sleep();
-        super.move();
-        super.breathe();
-        super.makeSound();
-        System.out.println("Giraffe stretching");
+    @Override
+    public void eat(){
+        System.out.println("Running eat in Giraffe");
+    }
+    @Override
+    public void sleep() {
+        System.out.println("Running sleep in Giraffe");
+    }
+    @Override
+    public void move() {
+        System.out.println("Running move in Giraffe");
+    }
+    @Override
+    public void breathe() {
+        System.out.println("Running breathe in Giraffe");
+    }
+    @Override
+    public void makeSound() {
+        System.out.println("Running makeSound in Giraffe");
     }
 }

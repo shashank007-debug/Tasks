@@ -1,12 +1,24 @@
 package com.xworkz.inheritance.internal.animal;
 
 public class Cat extends Animal {
-    public void purr() {
-        super.eat();
-        super.sleep();
-        super.move();
-        super.breathe();
-        super.makeSound();
-        System.out.println("Cat purring");
+    @Override
+    public void eat(){
+        System.out.println("Running eat in Cat");
+    }
+    @Override
+    public void sleep() {
+        System.out.println("Running sleep in Cat");
+    }
+    @Override
+    public void move() {
+        System.out.println("Running move in Cat");
+    }
+    @Override
+    public void breathe() {
+        System.out.println("Running breathe in Cat");
+    }
+    @Override
+    public void makeSound() {
+        System.out.println("Running makeSound in Cat");
     }
 }

@@ -61,47 +61,103 @@ public class Runner {
         animal.breathe();
         animal.makeSound();
 
-        Dog dog = new Dog();
-        dog.bark();
-
-        Cat cat = new Cat();
-        cat.purr();
+        Animal bear = new Bear();
+        bear.eat();
+        bear.sleep();
+        bear.move();
+        bear.breathe();
+        bear.makeSound();
 
         Bird bird = new Bird();
-        bird.fly();
+        bird.eat();
+        bird.sleep();
+        bird.move();
+        bird.breathe();
+        bird.makeSound();
 
-        Fish fish = new Fish();
-        fish.swim();
+        Cat cat = new Cat();
+        cat.eat();
+        cat.sleep();
+        cat.move();
+        cat.breathe();
+        cat.makeSound();
 
-        Lion lion = new Lion();
-        lion.roar();
+        Animal dog = new Dog();
+        dog.eat();
+        dog.sleep();
+        dog.move();
+        dog.breathe();
+        dog.makeSound();
+
+        Animal dolphin = new Dolphin();
+        dolphin.eat();
+        dolphin.sleep();
+        dolphin.move();
+        dolphin.breathe();
+        dolphin.makeSound();
 
         Elephant elephant = new Elephant();
-        elephant.trumpet();
+        elephant.eat();
+        elephant.sleep();
+        elephant.move();
+        elephant.breathe();
+        elephant.makeSound();
 
-        Monkey monkey = new Monkey();
-        monkey.climb();
-
-        Snake snake = new Snake();
-        snake.slither();
-
-        Dolphin dolphin = new Dolphin();
-        dolphin.jump();
-
-        Kangaroo kangaroo = new Kangaroo();
-        kangaroo.hop();
-
-        Penguin penguin = new Penguin();
-        penguin.slide();
-
-        Wolf wolf = new Wolf();
-        wolf.howl();
+        Fish fish = new Fish();
+        fish.eat();
+        fish.sleep();
+        fish.move();
+        fish.breathe();
+        fish.makeSound();
 
         Giraffe giraffe = new Giraffe();
-        giraffe.stretch();
+        giraffe.eat();
+        giraffe.sleep();
+        giraffe.move();
+        giraffe.breathe();
+        giraffe.makeSound();
 
-        Bear bear = new Bear();
-        bear.hibernate();
+        Kangaroo kangaroo = new Kangaroo();
+        kangaroo.eat();
+        kangaroo.sleep();
+        kangaroo.move();
+        kangaroo.breathe();
+        kangaroo.makeSound();
+
+        Lion lion = new Lion();
+        lion.eat();
+        lion.sleep();
+        lion.move();
+        lion.breathe();
+        lion.makeSound();
+
+        Animal monkey = new Monkey();
+        monkey.eat();
+        monkey.sleep();
+        monkey.move();
+        monkey.breathe();
+        monkey.makeSound();
+
+        Penguin penguin = new Penguin();
+        penguin.eat();
+        penguin.sleep();
+        penguin.move();
+        penguin.breathe();
+        penguin.makeSound();
+
+        Snake snake = new Snake();
+        snake.eat();
+        snake.sleep();
+        snake.move();
+        snake.breathe();
+        snake.makeSound();
+
+        Wolf wolf = new Wolf();
+        wolf.eat();
+        wolf.sleep();
+        wolf.move();
+        wolf.breathe();
+        wolf.makeSound();
 
         System.out.println("\n===== ELECTRONIC DEVICE HIERARCHY =====");
         ElectronicDevice electronicDevice = new ElectronicDevice();
