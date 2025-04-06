@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.furniture;
 
 public class Wardrobe extends Furniture {
-    public void storeClothes() {
-        super.assemble();
-        super.disassemble();
-        super.clean();
-        super.move();
-        super.repair();
-        System.out.println("Wardrobe storing clothes");
+    @Override
+    public void assemble() {
+        System.out.println("Assembling Wardrobe");
+    }
+
+    @Override
+    public void disassemble() {
+        System.out.println("Disassembling Wardrobe");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning Wardrobe");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Moving Wardrobe");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Repairing Wardrobe");
     }
 }

@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.furniture;
 
 public class Chair extends Furniture {
-    public void sit() {
-        super.assemble();
-        super.disassemble();
-        super.clean();
-        super.move();
-        super.repair();
-        System.out.println("Chair sitting");
+    @Override
+    public void assemble() {
+        System.out.println("Assembling Chair");
+    }
+
+    @Override
+    public void disassemble() {
+        System.out.println("Disassembling Chair");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning Chair");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Moving Chair");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Repairing Chair");
     }
 }

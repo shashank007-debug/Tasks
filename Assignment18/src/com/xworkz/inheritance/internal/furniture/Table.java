@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.furniture;
 
 public class Table extends Furniture {
-    public void eatOn() {
-        super.assemble();
-        super.disassemble();
-        super.clean();
-        super.move();
-        super.repair();
-        System.out.println("Table eating on");
+    @Override
+    public void assemble() {
+        System.out.println("Assembling Table");
+    }
+
+    @Override
+    public void disassemble() {
+        System.out.println("Disassembling Table");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning Table");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Moving Table");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Repairing Table");
     }
 }

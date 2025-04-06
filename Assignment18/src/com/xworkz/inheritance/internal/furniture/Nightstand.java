@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.furniture;
 
 public class Nightstand extends Furniture {
-    public void placeLamp() {
-        super.assemble();
-        super.disassemble();
-        super.clean();
-        super.move();
-        super.repair();
-        System.out.println("Nightstand placing lamp");
+    @Override
+    public void assemble() {
+        System.out.println("Assembling Nightstand");
+    }
+
+    @Override
+    public void disassemble() {
+        System.out.println("Disassembling Nightstand");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning Nightstand");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Moving Nightstand");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Repairing Nightstand");
     }
 }

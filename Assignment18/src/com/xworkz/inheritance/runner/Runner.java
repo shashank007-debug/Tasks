@@ -276,7 +276,9 @@ public class Runner {
         tv.updateSoftware();
         tv.connectWifi();
 
+
         System.out.println("\n===== FURNITURE HIERARCHY =====");
+
         Furniture furniture = new Furniture();
         furniture.assemble();
         furniture.disassemble();
@@ -284,38 +286,82 @@ public class Runner {
         furniture.move();
         furniture.repair();
 
-        Chair chair = new Chair();
-        chair.sit();
-
-        Table table = new Table();
-        table.eatOn();
-
-        Sofa sofa = new Sofa();
-        sofa.lounge();
-
         Bed bed = new Bed();
-        bed.sleepOn();
+        bed.assemble();
+        bed.disassemble();
+        bed.clean();
+        bed.move();
+        bed.repair();
 
-        Desk desk = new Desk();
-        desk.workAt();
-
-        Bookshelf bookshelf = new Bookshelf();
-        bookshelf.storeBooks();
-
-        Wardrobe wardrobe = new Wardrobe();
-        wardrobe.storeClothes();
+        Furniture bookshelf = new Bookshelf();
+        bookshelf.assemble();
+        bookshelf.disassemble();
+        bookshelf.clean();
+        bookshelf.move();
+        bookshelf.repair();
 
         Cabinet cabinet = new Cabinet();
-        cabinet.storeItems();
+        cabinet.assemble();
+        cabinet.disassemble();
+        cabinet.clean();
+        cabinet.move();
+        cabinet.repair();
 
-        Dresser dresser = new Dresser();
-        dresser.organizeClothes();
+        Furniture chair = new Chair();
+        chair.assemble();
+        chair.disassemble();
+        chair.clean();
+        chair.move();
+        chair.repair();
 
         CoffeeTable coffeeTable = new CoffeeTable();
-        coffeeTable.placeDrinks();
+        coffeeTable.assemble();
+        coffeeTable.disassemble();
+        coffeeTable.clean();
+        coffeeTable.move();
+        coffeeTable.repair();
 
-        Nightstand nightstand = new Nightstand();
-        nightstand.placeLamp();
+        Furniture desk = new Desk();
+        desk.assemble();
+        desk.disassemble();
+        desk.clean();
+        desk.move();
+        desk.repair();
+
+        Dresser dresser = new Dresser();
+        dresser.assemble();
+        dresser.disassemble();
+        dresser.clean();
+        dresser.move();
+        dresser.repair();
+
+        Furniture nightstand = new Nightstand();
+        nightstand.assemble();
+        nightstand.disassemble();
+        nightstand.clean();
+        nightstand.move();
+        nightstand.repair();
+
+        Sofa sofa = new Sofa();
+        sofa.assemble();
+        sofa.disassemble();
+        sofa.clean();
+        sofa.move();
+        sofa.repair();
+
+        Furniture table = new Table();
+        table.assemble();
+        table.disassemble();
+        table.clean();
+        table.move();
+        table.repair();
+
+        Wardrobe wardrobe = new Wardrobe();
+        wardrobe.assemble();
+        wardrobe.disassemble();
+        wardrobe.clean();
+        wardrobe.move();
+        wardrobe.repair();
 
         System.out.println("\n===== APPLIANCE HIERARCHY =====");
 
