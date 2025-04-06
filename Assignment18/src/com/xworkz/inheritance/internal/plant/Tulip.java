@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.plant;
 
 public class Tulip extends Plant {
-    public void openPetals() {
-        super.water();
-        super.grow();
-        super.prune();
-        super.fertilize();
-        super.harvest();
-        System.out.println("Tulip opening petals");
+    @Override
+    public void water() {
+        System.out.println("Watering Tulip");
+    }
+
+    @Override
+    public void grow() {
+        System.out.println("Tulip growing");
+    }
+
+    @Override
+    public void prune() {
+        System.out.println("Pruning Tulip");
+    }
+
+    @Override
+    public void fertilize() {
+        System.out.println("Fertilizing Tulip");
+    }
+
+    @Override
+    public void harvest() {
+        System.out.println("Harvesting Tulip");
     }
 }

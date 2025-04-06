@@ -520,7 +520,10 @@ public class Runner {
         underwear.dry();
         underwear.iron();
         underwear.fold();
+
+
         System.out.println("\n===== PLANT HIERARCHY =====");
+
         Plant plant = new Plant();
         plant.water();
         plant.grow();
@@ -528,49 +531,75 @@ public class Runner {
         plant.fertilize();
         plant.harvest();
 
-        Plant roseParentRef = new Rose();
-        roseParentRef.water();
-        roseParentRef.grow();
-        roseParentRef.prune();
-        roseParentRef.fertilize();
-        roseParentRef.harvest();
+        Aloe aloe = new Aloe();
+        aloe.water();
+        aloe.grow();
+        aloe.prune();
+        aloe.fertilize();
+        aloe.harvest();
 
-        Plant oakParentRef = new Oak();
-        oakParentRef.water();
-        oakParentRef.grow();
-        oakParentRef.prune();
-        oakParentRef.fertilize();
-        oakParentRef.harvest();
-
-        Rose rose = new Rose();
-        rose.bloom();
-
-        Oak oak = new Oak();
-        oak.shedLeaves();
-
-        Tulip tulip = new Tulip();
-        tulip.openPetals();
+        Plant bamboo = new Bamboo();
+        bamboo.water();
+        bamboo.grow();
+        bamboo.prune();
+        bamboo.fertilize();
+        bamboo.harvest();
 
         Cactus cactus = new Cactus();
-        cactus.storeWater();
-
-        Pine pine = new Pine();
-        pine.dropCones();
-
-        Sunflower sunflower = new Sunflower();
-        sunflower.trackSun();
-
-        Bamboo bamboo = new Bamboo();
-        bamboo.growTall();
+        cactus.water();
+        cactus.grow();
+        cactus.prune();
+        cactus.fertilize();
+        cactus.harvest();
 
         Fern fern = new Fern();
-        fern.unfurl();
+        fern.water();
+        fern.grow();
+        fern.prune();
+        fern.fertilize();
+        fern.harvest();
 
-        Aloe aloe = new Aloe();
-        aloe.soothe();
+        Plant maple = new Maple();
+        maple.water();
+        maple.grow();
+        maple.prune();
+        maple.fertilize();
+        maple.harvest();
 
-        Maple maple = new Maple();
-        maple.changeColor();
+        Oak oak = new Oak();
+        oak.water();
+        oak.grow();
+        oak.prune();
+        oak.fertilize();
+        oak.harvest();
+
+        Plant pine = new Pine();
+        pine.water();
+        pine.grow();
+        pine.prune();
+        pine.fertilize();
+        pine.harvest();
+
+        Rose rose = new Rose();
+        rose.water();
+        rose.grow();
+        rose.prune();
+        rose.fertilize();
+        rose.harvest();
+
+        Plant sunflower = new Sunflower();
+        sunflower.water();
+        sunflower.grow();
+        sunflower.prune();
+        sunflower.fertilize();
+        sunflower.harvest();
+
+        Tulip tulip = new Tulip();
+        tulip.water();
+        tulip.grow();
+        tulip.prune();
+        tulip.fertilize();
+        tulip.harvest();
 
         System.out.println("\n===== TOOL HIERARCHY =====");
         Tool tool = new Tool();
