@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.vehicle;
 
 public class Motorcycle extends Vehicle {
-    public void wheelie() {
-        super.start();
-        super.stop();
-        super.accelerate();
-        super.brake();
-        super.honk();
-        System.out.println("Motorcycle doing wheelie");
+    @Override
+    public void start() {
+        System.out.println("Motorcycle starting");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Motorcycle stopping");
+    }
+
+    @Override
+    public void accelerate() {
+        System.out.println("Motorcycle accelerating");
+    }
+
+    @Override
+    public void brake() {
+        System.out.println("Motorcycle braking");
+    }
+
+    @Override
+    public void honk() {
+        System.out.println("Motorcycle honking");
     }
 }

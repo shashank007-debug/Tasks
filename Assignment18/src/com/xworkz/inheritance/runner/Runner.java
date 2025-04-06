@@ -12,7 +12,8 @@ import com.xworkz.inheritance.internal.clothing.*;
 
 public class Runner {
     public static void main(String[] args) {
-        System.out.println("===== VEHICLE HIERARCHY =====");
+        System.out.println("\n===== VEHICLE HIERARCHY =====");
+
         Vehicle vehicle = new Vehicle();
         vehicle.start();
         vehicle.stop();
@@ -20,38 +21,82 @@ public class Runner {
         vehicle.brake();
         vehicle.honk();
 
-        Car car = new Car();
-        car.openTrunk();
-
-        Truck truck = new Truck();
-        truck.loadCargo();
-
-        Motorcycle motorcycle = new Motorcycle();
-        motorcycle.wheelie();
-
-        Bus bus = new Bus();
-        bus.openDoors();
+        Vehicle airplane = new Airplane();
+        airplane.start();
+        airplane.stop();
+        airplane.accelerate();
+        airplane.brake();
+        airplane.honk();
 
         Bicycle bicycle = new Bicycle();
-        bicycle.ringBell();
+        bicycle.start();
+        bicycle.stop();
+        bicycle.accelerate();
+        bicycle.brake();
+        bicycle.honk();
 
         Boat boat = new Boat();
-        boat.anchor();
+        boat.start();
+        boat.stop();
+        boat.accelerate();
+        boat.brake();
+        boat.honk();
 
-        Airplane airplane = new Airplane();
-        airplane.takeOff();
+        Vehicle bus = new Bus();
+        bus.start();
+        bus.stop();
+        bus.accelerate();
+        bus.brake();
+        bus.honk();
+
+        Car car = new Car();
+        car.start();
+        car.stop();
+        car.accelerate();
+        car.brake();
+        car.honk();
 
         Helicopter helicopter = new Helicopter();
-        helicopter.hover();
+        helicopter.start();
+        helicopter.stop();
+        helicopter.accelerate();
+        helicopter.brake();
+        helicopter.honk();
 
-        Train train = new Train();
-        train.blowWhistle();
+        Vehicle motorcycle = new Motorcycle();
+        motorcycle.start();
+        motorcycle.stop();
+        motorcycle.accelerate();
+        motorcycle.brake();
+        motorcycle.honk();
 
         Scooter scooter = new Scooter();
-        scooter.fold();
+        scooter.start();
+        scooter.stop();
+        scooter.accelerate();
+        scooter.brake();
+        scooter.honk();
 
         Submarine submarine = new Submarine();
-        submarine.dive();
+        submarine.start();
+        submarine.stop();
+        submarine.accelerate();
+        submarine.brake();
+        submarine.honk();
+
+        Train train = new Train();
+        train.start();
+        train.stop();
+        train.accelerate();
+        train.brake();
+        train.honk();
+
+        Vehicle truck = new Truck();
+        truck.start();
+        truck.stop();
+        truck.accelerate();
+        truck.brake();
+        truck.honk();
 
         System.out.println("\n===== ANIMAL HIERARCHY =====");
         Animal animal = new Animal();
