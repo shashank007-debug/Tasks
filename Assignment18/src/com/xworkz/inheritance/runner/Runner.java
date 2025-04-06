@@ -360,6 +360,7 @@ public class Runner {
         washingMachine.repair();
 
         System.out.println("\n===== CLOTHING HIERARCHY =====");
+
         Clothing clothing = new Clothing();
         clothing.wear();
         clothing.wash();
@@ -367,50 +368,75 @@ public class Runner {
         clothing.iron();
         clothing.fold();
 
-        Clothing shirtParentRef = new Shirt();
-        shirtParentRef.wear();
-        shirtParentRef.wash();
-        shirtParentRef.dry();
-        shirtParentRef.iron();
-        shirtParentRef.fold();
-
-        Clothing jeansParentRef = new Jeans();
-        jeansParentRef.wear();
-        jeansParentRef.wash();
-        jeansParentRef.dry();
-        jeansParentRef.iron();
-        jeansParentRef.fold();
-
-        Shirt shirt = new Shirt();
-        shirt.buttonUp();
-
-        Jeans jeans = new Jeans();
-        jeans.rollCuffs();
-
-        Dress dress = new Dress();
-        dress.zipUp();
-
-        Jacket jacket = new Jacket();
-        jacket.zip();
-
-        Sweater sweater = new Sweater();
-        sweater.knit();
-
-        Shorts shorts = new Shorts();
-        shorts.adjustWaist();
-
-        Skirt skirt = new Skirt();
-        skirt.twirl();
-
-        Socks socks = new Socks();
-        socks.pair();
-
-        Underwear underwear = new Underwear();
-        underwear.layer();
+        Clothing dress = new Dress();
+        dress.wear();
+        dress.wash();
+        dress.dry();
+        dress.iron();
+        dress.fold();
 
         Hat hat = new Hat();
-        hat.tip();
+        hat.wear();
+        hat.wash();
+        hat.dry();
+        hat.iron();
+        hat.fold();
 
+        Clothing jacket = new Jacket();
+        jacket.wear();
+        jacket.wash();
+        jacket.dry();
+        jacket.iron();
+        jacket.fold();
+
+        Jeans jeans = new Jeans();
+        jeans.wear();
+        jeans.wash();
+        jeans.dry();
+        jeans.iron();
+        jeans.fold();
+
+        Clothing shirt = new Shirt();
+        shirt.wear();
+        shirt.wash();
+        shirt.dry();
+        shirt.iron();
+        shirt.fold();
+
+        Shorts shorts = new Shorts();
+        shorts.wear();
+        shorts.wash();
+        shorts.dry();
+        shorts.iron();
+        shorts.fold();
+
+        Clothing skirt = new Skirt();
+        skirt.wear();
+        skirt.wash();
+        skirt.dry();
+        skirt.iron();
+        skirt.fold();
+
+        Socks socks = new Socks();
+        socks.wear();
+        socks.wash();
+        socks.dry();
+        socks.iron();
+        socks.fold();
+
+        Clothing sweater = new Sweater();
+        sweater.wear();
+        sweater.wash();
+        sweater.dry();
+        sweater.iron();
+        sweater.fold();
+
+        Underwear underwear = new Underwear();
+        underwear.wear();
+        underwear.wash();
+        underwear.dry();
+        underwear.iron();
+        underwear.fold();
         System.out.println("\n===== PLANT HIERARCHY =====");
         Plant plant = new Plant();
         plant.water();

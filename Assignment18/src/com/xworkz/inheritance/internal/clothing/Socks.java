@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.clothing;
 
 public class Socks extends Clothing {
-    public void pair() {
-        super.wear();
-        super.wash();
-        super.dry();
-        super.iron();
-        super.fold();
-        System.out.println("Socks pairing");
+    @Override
+    public void wear() {
+        System.out.println("Wearing Socks");
+    }
+
+    @Override
+    public void wash() {
+        System.out.println("Washing Socks");
+    }
+
+    @Override
+    public void dry() {
+        System.out.println("Drying Socks");
+    }
+
+    @Override
+    public void iron() {
+        System.out.println("Ironing Socks");
+    }
+
+    @Override
+    public void fold() {
+        System.out.println("Folding Socks");
     }
 }

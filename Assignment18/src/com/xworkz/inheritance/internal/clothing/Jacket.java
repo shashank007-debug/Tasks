@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.clothing;
 
 public class Jacket extends Clothing {
-    public void zip() {
-        super.wear();
-        super.wash();
-        super.dry();
-        super.iron();
-        super.fold();
-        System.out.println("Jacket zipping");
+    @Override
+    public void wear() {
+        System.out.println("Wearing Jacket");
+    }
+
+    @Override
+    public void wash() {
+        System.out.println("Washing Jacket");
+    }
+
+    @Override
+    public void dry() {
+        System.out.println("Drying Jacket");
+    }
+
+    @Override
+    public void iron() {
+        System.out.println("Ironing Jacket");
+    }
+
+    @Override
+    public void fold() {
+        System.out.println("Folding Jacket");
     }
 }
