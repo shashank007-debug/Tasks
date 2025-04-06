@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.electronicdevice;
 
 public class TV extends ElectronicDevice {
-    public void changeChannel() {
-        super.powerOn();
-        super.powerOff();
-        super.charge();
-        super.updateSoftware();
-        super.connectWifi();
-        System.out.println("TV changing channel");
+    @Override
+    public void powerOn() {
+        System.out.println("TV powering on");
+    }
+
+    @Override
+    public void powerOff() {
+        System.out.println("TV powering off");
+    }
+
+    @Override
+    public void charge() {
+        System.out.println("TV charging");
+    }
+
+    @Override
+    public void updateSoftware() {
+        System.out.println("TV updating software");
+    }
+
+    @Override
+    public void connectWifi() {
+        System.out.println("TV connecting to WiFi");
     }
 }

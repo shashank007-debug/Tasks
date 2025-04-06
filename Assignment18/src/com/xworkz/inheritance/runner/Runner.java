@@ -205,39 +205,76 @@ public class Runner {
         wolf.makeSound();
 
         System.out.println("\n===== ELECTRONIC DEVICE HIERARCHY =====");
-        ElectronicDevice electronicDevice = new ElectronicDevice();
-        electronicDevice.powerOn();
-        electronicDevice.powerOff();
-        electronicDevice.charge();
-        electronicDevice.updateSoftware();
-        electronicDevice.connectWifi();
 
-        Smartphone smartphone = new Smartphone();
-        smartphone.makeCall();
+        ElectronicDevice device = new ElectronicDevice();
+        device.powerOn();
+        device.powerOff();
+        device.charge();
+        device.updateSoftware();
+        device.connectWifi();
 
-        Laptop laptop = new Laptop();
-        laptop.type();
-
-        Tablet tablet = new Tablet();
-        tablet.draw();
-
-        SmartWatch smartWatch = new SmartWatch();
-        smartWatch.trackHeartRate();
-
-        TV tv = new TV();
-        tv.changeChannel();
-
-        Router router = new Router();
-        router.broadcastSignal();
-
-        Camera camera = new Camera();
-        camera.takePhoto();
+        ElectronicDevice camera = new Camera();
+        camera.powerOn();
+        camera.powerOff();
+        camera.charge();
+        camera.updateSoftware();
+        camera.connectWifi();
 
         GameConsole gameConsole = new GameConsole();
-        gameConsole.playGame();
+        gameConsole.powerOn();
+        gameConsole.powerOff();
+        gameConsole.charge();
+        gameConsole.updateSoftware();
+        gameConsole.connectWifi();
+
+        ElectronicDevice laptop = new Laptop();
+        laptop.powerOn();
+        laptop.powerOff();
+        laptop.charge();
+        laptop.updateSoftware();
+        laptop.connectWifi();
+
+        Router router = new Router();
+        router.powerOn();
+        router.powerOff();
+        router.charge();
+        router.updateSoftware();
+        router.connectWifi();
+
+        ElectronicDevice smartphone = new Smartphone();
+        smartphone.powerOn();
+        smartphone.powerOff();
+        smartphone.charge();
+        smartphone.updateSoftware();
+        smartphone.connectWifi();
 
         SmartSpeaker smartSpeaker = new SmartSpeaker();
-        smartSpeaker.playMusic();
+        smartSpeaker.powerOn();
+        smartSpeaker.powerOff();
+        smartSpeaker.charge();
+        smartSpeaker.updateSoftware();
+        smartSpeaker.connectWifi();
+
+        ElectronicDevice smartWatch = new SmartWatch();
+        smartWatch.powerOn();
+        smartWatch.powerOff();
+        smartWatch.charge();
+        smartWatch.updateSoftware();
+        smartWatch.connectWifi();
+
+        Tablet tablet = new Tablet();
+        tablet.powerOn();
+        tablet.powerOff();
+        tablet.charge();
+        tablet.updateSoftware();
+        tablet.connectWifi();
+
+        ElectronicDevice tv = new TV();
+        tv.powerOn();
+        tv.powerOff();
+        tv.charge();
+        tv.updateSoftware();
+        tv.connectWifi();
 
         System.out.println("\n===== FURNITURE HIERARCHY =====");
         Furniture furniture = new Furniture();

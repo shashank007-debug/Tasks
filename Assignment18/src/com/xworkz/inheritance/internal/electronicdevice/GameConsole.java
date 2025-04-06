@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.electronicdevice;
 
 public class GameConsole extends ElectronicDevice {
-    public void playGame() {
-        super.powerOn();
-        super.powerOff();
-        super.charge();
-        super.updateSoftware();
-        super.connectWifi();
-        System.out.println("GameConsole playing game");
+    @Override
+    public void powerOn() {
+        System.out.println("GameConsole powering on");
+    }
+
+    @Override
+    public void powerOff() {
+        System.out.println("GameConsole powering off");
+    }
+
+    @Override
+    public void charge() {
+        System.out.println("GameConsole charging");
+    }
+
+    @Override
+    public void updateSoftware() {
+        System.out.println("GameConsole updating software");
+    }
+
+    @Override
+    public void connectWifi() {
+        System.out.println("GameConsole connecting to WiFi");
     }
 }
