@@ -280,7 +280,7 @@ public class Runner {
         Nightstand nightstand = new Nightstand();
         nightstand.placeLamp();
 
-        System.out.println("===== APPLIANCE HIERARCHY =====");
+        System.out.println("\n===== APPLIANCE HIERARCHY =====");
 
         Appliance appliance = new Appliance();
         appliance.plugIn();
@@ -289,49 +289,75 @@ public class Runner {
         appliance.clean();
         appliance.repair();
 
-        Appliance fridgeParentRef = new Refrigerator();
-        fridgeParentRef.plugIn();
-        fridgeParentRef.turnOn();
-        fridgeParentRef.turnOff();
-        fridgeParentRef.clean();
-        fridgeParentRef.repair();
-
-        Appliance microwaveParentRef = new Microwave();
-        microwaveParentRef.plugIn();
-        microwaveParentRef.turnOn();
-        microwaveParentRef.turnOff();
-        microwaveParentRef.clean();
-        microwaveParentRef.repair();
-
-        Refrigerator fridge = new Refrigerator();
-        fridge.coolFood();
-
-        Microwave microwave = new Microwave();
-        microwave.heatFood();
-
-        WashingMachine washer = new WashingMachine();
-        washer.washClothes();
-
-        Dishwasher dishwasher = new Dishwasher();
-        dishwasher.washDishes();
-
-        Oven oven = new Oven();
-        oven.bake();
-
-        Toaster toaster = new Toaster();
-        toaster.toastBread();
+        Appliance airFryer = new AirFryer();
+        airFryer.plugIn();
+        airFryer.turnOn();
+        airFryer.turnOff();
+        airFryer.clean();
+        airFryer.repair();
 
         Blender blender = new Blender();
-        blender.blend();
+        blender.plugIn();
+        blender.turnOn();
+        blender.turnOff();
+        blender.clean();
+        blender.repair();
 
-        CoffeeMaker coffeeMaker = new CoffeeMaker();
-        coffeeMaker.brewCoffee();
+        Appliance coffeeMaker = new CoffeeMaker();
+        coffeeMaker.plugIn();
+        coffeeMaker.turnOn();
+        coffeeMaker.turnOff();
+        coffeeMaker.clean();
+        coffeeMaker.repair();
 
-        AirFryer airFryer = new AirFryer();
-        airFryer.airFry();
+        Dishwasher dishwasher = new Dishwasher();
+        dishwasher.plugIn();
+        dishwasher.turnOn();
+        dishwasher.turnOff();
+        dishwasher.clean();
+        dishwasher.repair();
 
-        VacuumCleaner vacuum = new VacuumCleaner();
-        vacuum.vacuum();
+        Appliance microwave = new Microwave();
+        microwave.plugIn();
+        microwave.turnOn();
+        microwave.turnOff();
+        microwave.clean();
+        microwave.repair();
+
+        Oven oven = new Oven();
+        oven.plugIn();
+        oven.turnOn();
+        oven.turnOff();
+        oven.clean();
+        oven.repair();
+
+        Appliance refrigerator = new Refrigerator();
+        refrigerator.plugIn();
+        refrigerator.turnOn();
+        refrigerator.turnOff();
+        refrigerator.clean();
+        refrigerator.repair();
+
+        Toaster toaster = new Toaster();
+        toaster.plugIn();
+        toaster.turnOn();
+        toaster.turnOff();
+        toaster.clean();
+        toaster.repair();
+
+        Appliance vacuumCleaner = new VacuumCleaner();
+        vacuumCleaner.plugIn();
+        vacuumCleaner.turnOn();
+        vacuumCleaner.turnOff();
+        vacuumCleaner.clean();
+        vacuumCleaner.repair();
+
+        WashingMachine washingMachine = new WashingMachine();
+        washingMachine.plugIn();
+        washingMachine.turnOn();
+        washingMachine.turnOff();
+        washingMachine.clean();
+        washingMachine.repair();
 
         System.out.println("\n===== CLOTHING HIERARCHY =====");
         Clothing clothing = new Clothing();

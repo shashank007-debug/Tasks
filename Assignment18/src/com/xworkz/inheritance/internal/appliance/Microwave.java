@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.appliance;
 
 public class Microwave extends Appliance {
-    public void heatFood() {
-        super.plugIn();
-        super.turnOn();
-        super.turnOff();
-        super.clean();
-        super.repair();
-        System.out.println("Microwave heating food");
+    @Override
+    public void plugIn() {
+        System.out.println("Microwave plugging in");
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Microwave turning on");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("Microwave turning off");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Microwave cleaning");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Microwave repairing");
     }
 }
