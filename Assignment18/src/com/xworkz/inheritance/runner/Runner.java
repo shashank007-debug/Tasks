@@ -602,6 +602,7 @@ public class Runner {
         tulip.harvest();
 
         System.out.println("\n===== TOOL HIERARCHY =====");
+
         Tool tool = new Tool();
         tool.grip();
         tool.use();
@@ -609,49 +610,75 @@ public class Runner {
         tool.clean();
         tool.store();
 
-        Tool hammerParentRef = new Hammer();
-        hammerParentRef.grip();
-        hammerParentRef.use();
-        hammerParentRef.sharpen();
-        hammerParentRef.clean();
-        hammerParentRef.store();
+        Axe axe = new Axe();
+        axe.grip();
+        axe.use();
+        axe.sharpen();
+        axe.clean();
+        axe.store();
 
-        Tool screwdriverParentRef = new Screwdriver();
-        screwdriverParentRef.grip();
-        screwdriverParentRef.use();
-        screwdriverParentRef.sharpen();
-        screwdriverParentRef.clean();
-        screwdriverParentRef.store();
-
-        Hammer hammer = new Hammer();
-        hammer.nail();
-
-        Screwdriver screwdriver = new Screwdriver();
-        screwdriver.twist();
-
-        Wrench wrench = new Wrench();
-        wrench.tighten();
-
-        Pliers pliers = new Pliers();
-        pliers.clamp();
-
-        Saw saw = new Saw();
-        saw.cut();
+        Tool chisel = new Chisel();
+        chisel.grip();
+        chisel.use();
+        chisel.sharpen();
+        chisel.clean();
+        chisel.store();
 
         Drill drill = new Drill();
-        drill.bore();
+        drill.grip();
+        drill.use();
+        drill.sharpen();
+        drill.clean();
+        drill.store();
 
-        Axe axe = new Axe();
-        axe.chop();
+        Tool hammer = new Hammer();
+        hammer.grip();
+        hammer.use();
+        hammer.sharpen();
+        hammer.clean();
+        hammer.store();
+
+        Pliers pliers = new Pliers();
+        pliers.grip();
+        pliers.use();
+        pliers.sharpen();
+        pliers.clean();
+        pliers.store();
+
+        Tool rake = new Rake();
+        rake.grip();
+        rake.use();
+        rake.sharpen();
+        rake.clean();
+        rake.store();
+
+        Saw saw = new Saw();
+        saw.grip();
+        saw.use();
+        saw.sharpen();
+        saw.clean();
+        saw.store();
+
+        Tool screwdriver = new Screwdriver();
+        screwdriver.grip();
+        screwdriver.use();
+        screwdriver.sharpen();
+        screwdriver.clean();
+        screwdriver.store();
 
         Shovel shovel = new Shovel();
-        shovel.dig();
+        shovel.grip();
+        shovel.use();
+        shovel.sharpen();
+        shovel.clean();
+        shovel.store();
 
-        Rake rake = new Rake();
-        rake.gather();
-
-        Chisel chisel = new Chisel();
-        chisel.carve();
+        Tool wrench = new Wrench();
+        wrench.grip();
+        wrench.use();
+        wrench.sharpen();
+        wrench.clean();
+        wrench.store();
 
         System.out.println("\n===== MUSICAL INSTRUMENT HIERARCHY =====");
 

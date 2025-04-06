@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.tools;
 
 public class Screwdriver extends Tool {
-    public void twist() {
-        super.grip();
-        super.use();
-        super.sharpen();
-        super.clean();
-        super.store();
-        System.out.println("Screwdriver twisting");
+    @Override
+    public void grip() {
+        System.out.println("Gripping the Screwdriver");
+    }
+
+    @Override
+    public void use() {
+        System.out.println("Using the Screwdriver");
+    }
+
+    @Override
+    public void sharpen() {
+        System.out.println("Sharpening the Screwdriver");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning the Screwdriver");
+    }
+
+    @Override
+    public void store() {
+        System.out.println("Storing the Screwdriver");
     }
 }
