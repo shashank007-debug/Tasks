@@ -625,6 +625,7 @@ public class Runner {
         chisel.carve();
 
         System.out.println("\n===== MUSICAL INSTRUMENT HIERARCHY =====");
+
         MusicalInstrument instrument = new MusicalInstrument();
         instrument.tune();
         instrument.play();
@@ -632,52 +633,82 @@ public class Runner {
         instrument.store();
         instrument.repair();
 
-        MusicalInstrument guitarParentRef = new Guitar();
-        guitarParentRef.tune();
-        guitarParentRef.play();
-        guitarParentRef.clean();
-        guitarParentRef.store();
-        guitarParentRef.repair();
+        Cello cello = new Cello();
+        cello.tune();
+        cello.play();
+        cello.clean();
+        cello.store();
+        cello.repair();
 
-        MusicalInstrument pianoParentRef = new Piano();
-        pianoParentRef.tune();
-        pianoParentRef.play();
-        pianoParentRef.clean();
-        pianoParentRef.store();
-        pianoParentRef.repair();
-
-        Guitar guitar = new Guitar();
-        guitar.strum();
-
-        Piano piano = new Piano();
-        piano.pressKeys();
-
-        Violin violin = new Violin();
-        violin.bow();
+        MusicalInstrument clarinet = new Clarinet();
+        clarinet.tune();
+        clarinet.play();
+        clarinet.clean();
+        clarinet.store();
+        clarinet.repair();
 
         Drums drums = new Drums();
-        drums.beat();
+        drums.tune();
+        drums.play();
+        drums.clean();
+        drums.store();
+        drums.repair();
 
-        Flute flute = new Flute();
-        flute.blow();
+        MusicalInstrument flute = new Flute();
+        flute.tune();
+        flute.play();
+        flute.clean();
+        flute.store();
+        flute.repair();
 
-        Trumpet trumpet = new Trumpet();
-        trumpet.buzz();
+        Guitar guitar = new Guitar();
+        guitar.tune();
+        guitar.play();
+        guitar.clean();
+        guitar.store();
+        guitar.repair();
 
-        Saxophone saxophone = new Saxophone();
-        saxophone.reed();
+        MusicalInstrument harp = new Harp();
+        harp.tune();
+        harp.play();
+        harp.clean();
+        harp.store();
+        harp.repair();
 
-        Cello cello = new Cello();
-        cello.vibrato();
+        Piano piano = new Piano();
+        piano.tune();
+        piano.play();
+        piano.clean();
+        piano.store();
+        piano.repair();
 
-        Harp harp = new Harp();
-        harp.pluck();
-
-        Clarinet clarinet = new Clarinet();
-        clarinet.reed();
+        MusicalInstrument saxophone = new Saxophone();
+        saxophone.tune();
+        saxophone.play();
+        saxophone.clean();
+        saxophone.store();
+        saxophone.repair();
 
         Trombone trombone = new Trombone();
-        trombone.slide();
+        trombone.tune();
+        trombone.play();
+        trombone.clean();
+        trombone.store();
+        trombone.repair();
+
+        MusicalInstrument trumpet = new Trumpet();
+        trumpet.tune();
+        trumpet.play();
+        trumpet.clean();
+        trumpet.store();
+        trumpet.repair();
+
+        Violin violin = new Violin();
+        violin.tune();
+        violin.play();
+        violin.clean();
+        violin.store();
+        violin.repair();
 
 
     }

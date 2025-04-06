@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.musicalInstrument;
 
 public class Guitar extends MusicalInstrument {
-    public void strum() {
-        super.tune();
-        super.play();
-        super.clean();
-        super.store();
-        super.repair();
-        System.out.println("Guitar strumming");
+    @Override
+    public void tune() {
+        System.out.println("Tuning Guitar");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Playing Guitar");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning Guitar");
+    }
+
+    @Override
+    public void store() {
+        System.out.println("Storing Guitar");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Repairing Guitar");
     }
 }

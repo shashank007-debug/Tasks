@@ -1,12 +1,28 @@
 package com.xworkz.inheritance.internal.musicalInstrument;
 
 public class Piano extends MusicalInstrument {
-    public void pressKeys() {
-        super.tune();
-        super.play();
-        super.clean();
-        super.store();
-        super.repair();
-        System.out.println("Piano pressing keys");
+    @Override
+    public void tune() {
+        System.out.println("Tuning Piano");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Playing Piano");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning Piano");
+    }
+
+    @Override
+    public void store() {
+        System.out.println("Storing Piano");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Repairing Piano");
     }
 }
