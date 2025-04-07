@@ -768,31 +768,40 @@ public class Runner {
 
         System.out.println("-----------------------------------");
         GrizzlyBear grizzly = new GrizzlyBear();
-
         grizzly.invokeAllBearMethods();
-
         grizzly.checkAndCast(grizzly);
-
         Bear normalBear = new Bear();
         grizzly.checkAndCast(normalBear);
-
         System.out.println("-----------------------------------");
         StreetDog streetDog = new StreetDog();
         streetDog.invokeAllDogMethods();
-
         streetDog.checkAndCast(streetDog);
-
         Dog normalDog = new Dog();
         streetDog.checkAndCast(normalDog);
-
         System.out.println("-----------------------------------");
-
         AfricanElephant africanElephant = new AfricanElephant();
         africanElephant.invokeAllElephantMethods();
         africanElephant.checkAndCast(africanElephant);
         Elephant regularElephant = new Elephant();
         africanElephant.checkAndCast(regularElephant);
-
+        System.out.println("-----------------------------------");
+        Cobra cobra = new Cobra();
+        cobra.invokeAllSnakeMethods();
+        cobra.checkAndCast(cobra);
+        Snake regularSnake = new Snake();
+        cobra.checkAndCast(regularSnake);
+        System.out.println("-----------------------------------");
+        ArcticWolf arcticWolf = new ArcticWolf();
+        arcticWolf.invokeAllWolfMethods();
+        arcticWolf.checkAndCast(arcticWolf);
+        Wolf regularWolf = new Wolf();
+        arcticWolf.checkAndCast(regularWolf);
+        System.out.println("-----------------------------------");
+        EmperorPenguin emperorPenguin = new EmperorPenguin();
+        emperorPenguin.invokeAllPenguinMethods();
+        emperorPenguin.checkAndCast(emperorPenguin);
+        Penguin regularPenguin = new Penguin();
+        emperorPenguin.checkAndCast(regularPenguin);
         System.out.println("-----------------------------------");
     }
 }
