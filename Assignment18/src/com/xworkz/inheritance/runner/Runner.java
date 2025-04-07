@@ -809,5 +809,23 @@ public class Runner {
         Monkey regularMonkey = new Monkey();
         capuchinMonkey.checkAndCast(regularMonkey);
         System.out.println("-----------------------------------");
+        AfricanLion africanLion = new AfricanLion();
+        africanLion.invokeAllLionMethods();
+        africanLion.checkAndCast(africanLion);
+        Lion regularLion = new Lion();
+        africanLion.checkAndCast(regularLion);
+        System.out.println("-----------------------------------");
+        RedKangaroo redKangaroo = new RedKangaroo();
+        redKangaroo.invokeAllKangarooMethods();
+        redKangaroo.checkAndCast(redKangaroo);
+        Kangaroo regularKangaroo = new Kangaroo();
+        redKangaroo.checkAndCast(regularKangaroo);
+        System.out.println("-----------------------------------");
+        TallGiraffe tallGiraffe = new TallGiraffe();
+        tallGiraffe.invokeAllGiraffeMethods();
+        tallGiraffe.checkAndCast(tallGiraffe);
+        Giraffe regularGiraffe = new Giraffe();
+        tallGiraffe.checkAndCast(regularGiraffe);
+        System.out.println("-----------------------------------");
     }
 }
