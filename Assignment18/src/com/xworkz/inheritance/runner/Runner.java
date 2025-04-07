@@ -803,5 +803,11 @@ public class Runner {
         Penguin regularPenguin = new Penguin();
         emperorPenguin.checkAndCast(regularPenguin);
         System.out.println("-----------------------------------");
+        CapuchinMonkey capuchinMonkey = new CapuchinMonkey();
+        capuchinMonkey.invokeAllMonkeyMethods();
+        capuchinMonkey.checkAndCast(capuchinMonkey);
+        Monkey regularMonkey = new Monkey();
+        capuchinMonkey.checkAndCast(regularMonkey);
+        System.out.println("-----------------------------------");
     }
 }
