@@ -766,7 +766,7 @@ public class Runner {
         violin.store();
         violin.repair();
 
-        System.out.println("====================================================================");
+        System.out.println("-----------------------------------");
         GrizzlyBear grizzly = new GrizzlyBear();
 
         grizzly.invokeAllBearMethods();
@@ -776,7 +776,7 @@ public class Runner {
         Bear normalBear = new Bear();
         grizzly.checkAndCast(normalBear);
 
-        System.out.println("====================================================================");
+        System.out.println("-----------------------------------");
         StreetDog streetDog = new StreetDog();
         streetDog.invokeAllDogMethods();
 
@@ -784,5 +784,15 @@ public class Runner {
 
         Dog normalDog = new Dog();
         streetDog.checkAndCast(normalDog);
+
+        System.out.println("-----------------------------------");
+
+        AfricanElephant africanElephant = new AfricanElephant();
+        africanElephant.invokeAllElephantMethods();
+        africanElephant.checkAndCast(africanElephant);
+        Elephant regularElephant = new Elephant();
+        africanElephant.checkAndCast(regularElephant);
+
+        System.out.println("-----------------------------------");
     }
 }
