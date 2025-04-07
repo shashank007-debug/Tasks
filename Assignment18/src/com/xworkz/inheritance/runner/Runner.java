@@ -766,6 +766,23 @@ public class Runner {
         violin.store();
         violin.repair();
 
+        System.out.println("====================================================================");
+        GrizzlyBear grizzly = new GrizzlyBear();
 
+        grizzly.invokeAllBearMethods();
+
+        grizzly.checkAndCast(grizzly);
+
+        Bear normalBear = new Bear();
+        grizzly.checkAndCast(normalBear);
+
+        System.out.println("====================================================================");
+        StreetDog streetDog = new StreetDog();
+        streetDog.invokeAllDogMethods();
+
+        streetDog.checkAndCast(streetDog);
+
+        Dog normalDog = new Dog();
+        streetDog.checkAndCast(normalDog);
     }
 }
