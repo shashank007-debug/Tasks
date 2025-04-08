@@ -18,7 +18,7 @@ public class BeachShorts extends Shorts {
             BeachShorts bs = (BeachShorts) clothing;
             bs.dryFast();
         } else {
-            System.out.println("Not BeachShorts");
+            System.out.println("Not a BeachShorts");
         }
     }
 }
