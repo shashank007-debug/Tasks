@@ -15,4 +15,8 @@ public class VacuumCleaner {
     public String toString() {
         return "VacuumCleaner [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 89;
+    }
 }

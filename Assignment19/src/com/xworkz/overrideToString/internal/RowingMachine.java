@@ -15,4 +15,8 @@ public class RowingMachine {
     public String toString() {
         return "RowingMachine [brand=" + brand + ", model=" + model + ", resistanceType=" + resistanceType + "]";
     }
+    @Override
+    public int hashCode() {
+        return 68;
+    }
 }

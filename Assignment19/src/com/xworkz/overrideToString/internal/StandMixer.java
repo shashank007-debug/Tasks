@@ -15,4 +15,8 @@ public class StandMixer {
     public String toString() {
         return "StandMixer [brand=" + brand + ", model=" + model + ", speedSettings=" + speedSettings + "]";
     }
+    @Override
+    public int hashCode() {
+        return 76;
+    }
 }

@@ -15,4 +15,8 @@ public class RCcar {
     public String toString() {
         return "RCcar [brand=" + brand + ", model=" + model + ", powerSource=" + powerSource + "]";
     }
+    @Override
+    public int hashCode() {
+        return 64;
+    }
 }

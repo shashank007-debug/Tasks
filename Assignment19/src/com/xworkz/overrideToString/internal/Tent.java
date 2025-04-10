@@ -15,4 +15,8 @@ public class Tent {
     public String toString() {
         return "Tent [brand=" + brand + ", model=" + model + ", capacity=" + capacity + " people]";
     }
+    @Override
+    public int hashCode() {
+        return 83;
+    }
 }

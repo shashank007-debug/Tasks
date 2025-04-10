@@ -15,4 +15,8 @@ public class ElectricShaver {
     public String toString() {
         return "ElectricShaver [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 27;
+    }
 }

@@ -15,4 +15,8 @@ public class Plant {
     public String toString() {
         return "Plant [commonName=" + commonName + ", scientificName=" + scientificName + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 58;
+    }
 }

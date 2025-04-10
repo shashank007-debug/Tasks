@@ -15,4 +15,8 @@ public class Keyboard {
     public String toString() {
         return "Keyboard [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 50;
+    }
 }

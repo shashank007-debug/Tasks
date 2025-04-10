@@ -15,5 +15,9 @@ public class OfficeChair {
     public String toString() {
         return "OfficeChair [brand=" + brand + ", model=" + model + ", material=" + material + "]";
     }
+    @Override
+    public int hashCode() {
+        return 55;
+    }
 }
 

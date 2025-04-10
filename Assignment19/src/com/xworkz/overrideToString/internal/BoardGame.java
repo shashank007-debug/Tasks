@@ -15,4 +15,9 @@ public class BoardGame {
     public String toString() {
         return "BoardGame [name=" + name + ", genre=" + genre + ", maxPlayers=" + maxPlayers + "]";
     }
+
+    @Override
+    public int hashCode() {
+        return 10;
+    }
 }

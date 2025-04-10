@@ -15,4 +15,8 @@ public class Skateboard {
     public String toString() {
         return "Skateboard [brand=" + brand + ", model=" + model + ", deckWidth=" + deckWidth + "]";
     }
+    @Override
+    public int hashCode() {
+        return 70;
+    }
 }

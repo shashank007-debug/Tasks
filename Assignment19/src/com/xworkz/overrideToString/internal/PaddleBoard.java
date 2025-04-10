@@ -15,4 +15,8 @@ public class PaddleBoard {
     public String toString() {
         return "PaddleBoard [brand=" + brand + ", model=" + model + ", length=" + length + "ft]";
     }
+    @Override
+    public int hashCode() {
+        return 56;
+    }
 }

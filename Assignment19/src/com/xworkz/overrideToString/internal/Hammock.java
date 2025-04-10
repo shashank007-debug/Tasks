@@ -15,4 +15,8 @@ public class Hammock {
     public String toString() {
         return "Hammock [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "person]";
     }
+    @Override
+    public int hashCode() {
+        return 43;
+    }
 }

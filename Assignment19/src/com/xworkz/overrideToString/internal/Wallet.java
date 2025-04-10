@@ -15,4 +15,8 @@ public class Wallet {
     public String toString() {
         return "Wallet [brand=" + brand + ", model=" + model + ", cardSlots=" + cardSlots + "]";
     }
+    @Override
+    public int hashCode() {
+        return 91;
+    }
 }

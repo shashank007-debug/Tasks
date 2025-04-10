@@ -15,4 +15,8 @@ public class JumpRope {
     public String toString() {
         return "JumpRope [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 47;
+    }
 }

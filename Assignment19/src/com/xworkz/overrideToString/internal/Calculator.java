@@ -15,4 +15,8 @@ public class Calculator {
     public String toString() {
         return "Calculator [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 12;
+    }
 }

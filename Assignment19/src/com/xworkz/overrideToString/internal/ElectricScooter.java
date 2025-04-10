@@ -15,4 +15,8 @@ public class ElectricScooter {
     public String toString() {
         return "ElectricScooter [brand=" + brand + ", model=" + model + ", maxSpeed=" + maxSpeed + "mph]";
     }
+    @Override
+    public int hashCode() {
+        return 26;
+    }
 }

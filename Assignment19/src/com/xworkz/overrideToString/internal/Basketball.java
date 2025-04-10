@@ -15,4 +15,8 @@ public class Basketball {
     public String toString() {
         return "Basketball [brand=" + brand + ", model=" + model + ", circumference=" + circumference + "in]";
     }
+    @Override
+    public int hashCode() {
+        return 6;
+    }
 }

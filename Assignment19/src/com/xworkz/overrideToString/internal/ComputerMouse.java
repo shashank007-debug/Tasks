@@ -15,4 +15,8 @@ public class ComputerMouse {
     public String toString() {
         return "ComputerMouse [brand=" + brand + ", model=" + model + ", dpi=" + dpi + "]";
     }
+    @Override
+    public int hashCode() {
+        return 16;
+    }
 }

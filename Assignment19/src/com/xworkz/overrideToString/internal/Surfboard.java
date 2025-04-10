@@ -15,4 +15,8 @@ public class Surfboard {
     public String toString() {
         return "Surfboard [brand=" + brand + ", model=" + model + ", length=" + length + "ft]";
     }
+    @Override
+    public int hashCode() {
+        return 80;
+    }
 }

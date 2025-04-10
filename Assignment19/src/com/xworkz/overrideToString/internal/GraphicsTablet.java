@@ -15,4 +15,8 @@ public class GraphicsTablet {
     public String toString() {
         return "GraphicsTablet [brand=" + brand + ", model=" + model + ", size=" + size + "]";
     }
+    @Override
+    public int hashCode() {
+        return 40;
+    }
 }

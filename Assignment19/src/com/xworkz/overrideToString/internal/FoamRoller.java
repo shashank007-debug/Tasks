@@ -15,4 +15,8 @@ public class FoamRoller {
     public String toString() {
         return "FoamRoller [brand=" + brand + ", model=" + model + ", density=" + density + "]";
     }
+    @Override
+    public int hashCode() {
+        return 34;
+    }
 }

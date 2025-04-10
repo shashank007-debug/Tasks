@@ -15,4 +15,8 @@ public class FountainPen {
     public String toString() {
         return "FountainPen [brand=" + brand + ", model=" + model + ", nibSize=" + nibSize + "]";
     }
+    @Override
+    public int hashCode() {
+        return 36;
+    }
 }

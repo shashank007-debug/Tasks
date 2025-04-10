@@ -15,4 +15,8 @@ public class Drone {
     public String toString() {
         return "Drone [brand=" + brand + ", model=" + model + ", propellers=" + propellers + "]";
     }
+    @Override
+    public int hashCode() {
+        return 20;
+    }
 }

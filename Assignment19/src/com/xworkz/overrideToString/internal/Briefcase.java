@@ -15,4 +15,8 @@ public class Briefcase {
     public String toString() {
         return "Briefcase [brand=" + brand + ", model=" + model + ", material=" + material + "]";
     }
+    @Override
+    public int hashCode() {
+        return 11;
+    }
 }

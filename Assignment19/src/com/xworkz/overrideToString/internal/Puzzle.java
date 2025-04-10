@@ -15,4 +15,8 @@ public class Puzzle {
     public String toString() {
         return "Puzzle [brand=" + brand + ", theme=" + theme + ", pieces=" + pieces + "]";
     }
+    @Override
+    public int hashCode() {
+        return 63;
+    }
 }

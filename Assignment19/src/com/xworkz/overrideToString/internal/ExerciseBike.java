@@ -15,4 +15,8 @@ public class ExerciseBike {
     public String toString() {
         return "ExerciseBike [brand=" + brand + ", model=" + model + ", screenSize=" + screenSize + "in]";
     }
+    @Override
+    public int hashCode() {
+        return 29;
+    }
 }

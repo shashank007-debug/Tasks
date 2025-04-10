@@ -15,4 +15,8 @@ public class Watch {
     public String toString() {
         return "Watch [brand=" + brand + ", model=" + model + ", movementType=" + movementType + "]";
     }
+    @Override
+    public int hashCode() {
+        return 92;
+    }
 }

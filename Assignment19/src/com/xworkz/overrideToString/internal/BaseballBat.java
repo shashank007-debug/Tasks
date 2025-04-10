@@ -15,4 +15,8 @@ public class BaseballBat {
     public String toString() {
         return "BaseballBat [brand=" + brand + ", model=" + model + ", length=" + length + "in]";
     }
+    @Override
+    public int hashCode() {
+        return 5;
+    }
 }

@@ -15,4 +15,8 @@ public class Toaster {
     public String toString() {
         return "Toaster [brand=" + brand + ", model=" + model + ", slots=" + slots + "]";
     }
+    @Override
+    public int hashCode() {
+        return 85;
+    }
 }

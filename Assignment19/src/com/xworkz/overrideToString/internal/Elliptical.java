@@ -15,4 +15,8 @@ public class Elliptical {
     public String toString() {
         return "Elliptical [brand=" + brand + ", model=" + model + ", resistanceLevels=" + resistanceLevels + "]";
     }
+    @Override
+    public int hashCode() {
+        return 28;
+    }
 }

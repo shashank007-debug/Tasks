@@ -15,4 +15,7 @@ public class PunchingBag {
     public String toString() {
         return "PunchingBag [brand=" + brand + ", model=" + model + ", weight=" + weight + "lbs]";
     }
-}
+    @Override
+    public int hashCode() {
+        return 61;
+    }}

@@ -15,4 +15,8 @@ public class ExternalHDD {
     public String toString() {
         return "ExternalHDD [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "TB]";
     }
+    @Override
+    public int hashCode() {
+        return 30;
+    }
 }

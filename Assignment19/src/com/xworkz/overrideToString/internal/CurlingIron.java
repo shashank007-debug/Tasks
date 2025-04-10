@@ -15,4 +15,8 @@ public class CurlingIron {
     public String toString() {
         return "CurlingIron [brand=" + brand + ", model=" + model + ", barrelSize=" + barrelSize + "in]";
     }
+    @Override
+    public int hashCode() {
+        return 18;
+    }
 }

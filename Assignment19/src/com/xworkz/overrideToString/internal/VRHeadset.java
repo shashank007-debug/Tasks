@@ -15,4 +15,8 @@ public class VRHeadset {
     public String toString() {
         return "VRHeadset [brand=" + brand + ", model=" + model + ", storage=" + storage + "GB]";
     }
+    @Override
+    public int hashCode() {
+        return 90;
+    }
 }

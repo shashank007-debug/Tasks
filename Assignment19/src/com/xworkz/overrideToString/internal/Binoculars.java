@@ -15,4 +15,8 @@ public class Binoculars {
     public String toString() {
         return "Binoculars [brand=" + brand + ", model=" + model + ", magnification=" + magnification + "x]";
     }
+    @Override
+    public int hashCode() {
+        return 7;
+    }
 }

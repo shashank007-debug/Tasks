@@ -15,4 +15,5 @@ public class SmartSpeaker {
     public String toString() {
         return "SmartSpeaker [brand=" + brand + ", model=" + model + ", assistant=" + assistant + "]";
     }
+
 }

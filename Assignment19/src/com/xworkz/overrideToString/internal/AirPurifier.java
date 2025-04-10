@@ -15,4 +15,8 @@ public class AirPurifier {
     public String toString() {
         return "AirPurifier [brand=" + brand + ", model=" + model + ", coverageArea=" + coverageArea + "sq ft]";
     }
+    @Override
+    public int hashCode() {
+        return 3;
+    }
 }

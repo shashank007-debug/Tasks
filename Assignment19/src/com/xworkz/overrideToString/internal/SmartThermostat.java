@@ -15,4 +15,8 @@ public class SmartThermostat {
     public String toString() {
         return "SmartThermostat [brand=" + brand + ", model=" + model + ", connectivity=" + connectivity + "]";
     }
+    @Override
+    public int hashCode() {
+        return 74;
+    }
 }

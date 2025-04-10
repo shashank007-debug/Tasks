@@ -15,4 +15,8 @@ public class PunchingGloves {
     public String toString() {
         return "PunchingGloves [brand=" + brand + ", model=" + model + ", size=" + size + "oz]";
     }
+    @Override
+    public int hashCode() {
+        return 62;
+    }
 }

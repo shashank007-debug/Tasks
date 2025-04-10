@@ -15,4 +15,8 @@ public class Printer {
     public String toString() {
         return "Printer [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 59;
+    }
 }

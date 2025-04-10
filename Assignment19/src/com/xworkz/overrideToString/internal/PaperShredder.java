@@ -15,4 +15,8 @@ public class PaperShredder {
     public String toString() {
         return "PaperShredder [brand=" + brand + ", model=" + model + ", sheetCapacity=" + sheetCapacity + "]";
     }
+    @Override
+    public int hashCode() {
+        return 57;
+    }
 }

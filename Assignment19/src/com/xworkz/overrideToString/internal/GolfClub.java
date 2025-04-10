@@ -15,4 +15,8 @@ public class GolfClub {
     public String toString() {
         return "GolfClub [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 39;
+    }
 }

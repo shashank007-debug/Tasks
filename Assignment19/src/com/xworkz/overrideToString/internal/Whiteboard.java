@@ -15,4 +15,8 @@ public class Whiteboard {
     public String toString() {
         return "Whiteboard [brand=" + brand + ", model=" + model + ", size=" + size + "in]";
     }
+    @Override
+    public int hashCode() {
+        return 97;
+    }
 }

@@ -15,4 +15,8 @@ public class TennisRacket {
     public String toString() {
         return "TennisRacket [brand=" + brand + ", model=" + model + ", headSize=" + headSize + "sq in]";
     }
+    @Override
+    public int hashCode() {
+        return 82;
+    }
 }

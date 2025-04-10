@@ -15,4 +15,8 @@ public class GamingConsole {
     public String toString() {
         return "GamingConsole [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 37;
+    }
 }

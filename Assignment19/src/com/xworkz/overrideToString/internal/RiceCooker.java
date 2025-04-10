@@ -15,4 +15,8 @@ public class RiceCooker {
     public String toString() {
         return "RiceCooker [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "cup]";
     }
+    @Override
+    public int hashCode() {
+        return 66;
+    }
 }

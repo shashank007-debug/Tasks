@@ -15,4 +15,8 @@ public class Humidifier {
     public String toString() {
         return "Humidifier [brand=" + brand + ", model=" + model + ", tankSize=" + tankSize + "L]";
     }
+    @Override
+    public int hashCode() {
+        return 45;
+    }
 }

@@ -15,4 +15,9 @@ public class BloodPressureMonitor {
     public String toString() {
         return "BloodPressureMonitor [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+
+    @Override
+    public int hashCode() {
+        return 9;
+    }
 }

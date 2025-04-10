@@ -15,4 +15,8 @@ public class WeightBench {
     public String toString() {
         return "WeightBench [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 96;
+    }
 }

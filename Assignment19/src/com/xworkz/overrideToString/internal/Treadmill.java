@@ -15,4 +15,8 @@ public class Treadmill {
     public String toString() {
         return "Treadmill [brand=" + brand + ", model=" + model + ", maxSpeed=" + maxSpeed + "mph]";
     }
+    @Override
+    public int hashCode() {
+        return 88;
+    }
 }

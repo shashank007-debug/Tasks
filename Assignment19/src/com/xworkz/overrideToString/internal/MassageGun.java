@@ -15,4 +15,8 @@ public class MassageGun {
     public String toString() {
         return "MassageGun [brand=" + brand + ", model=" + model + ", speedSettings=" + speedSettings + "]";
     }
+    @Override
+    public int hashCode() {
+        return 52;
+    }
 }

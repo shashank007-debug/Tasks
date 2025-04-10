@@ -15,4 +15,8 @@ public class Projector {
     public String toString() {
         return "Projector [brand=" + brand + ", model=" + model + ", brightness=" + brightness + "lumens]";
     }
+    @Override
+    public int hashCode() {
+        return 60;
+    }
 }

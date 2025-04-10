@@ -15,4 +15,8 @@ public class DroneRacingSet {
     public String toString() {
         return "DroneRacingSet [brand=" + brand + ", model=" + model + ", maxSpeed=" + maxSpeed + "mph]";
     }
+    @Override
+    public int hashCode() {
+        return 21;
+    }
 }

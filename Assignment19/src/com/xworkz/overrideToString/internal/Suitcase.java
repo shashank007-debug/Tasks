@@ -15,4 +15,8 @@ public class Suitcase {
     public String toString() {
         return "Suitcase [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "L]";
     }
+    @Override
+    public int hashCode() {
+        return 79;
+    }
 }

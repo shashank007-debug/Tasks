@@ -15,4 +15,8 @@ public class ElectricBike {
     public String toString() {
         return "ElectricBike [brand=" + brand + ", model=" + model + ", motorPower=" + motorPower + "W]";
     }
+    @Override
+    public int hashCode() {
+        return 24;
+    }
 }

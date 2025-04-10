@@ -15,4 +15,8 @@ public class WaterFlosser {
     public String toString() {
         return "WaterFlosser [brand=" + brand + ", model=" + model + ", pressureSettings=" + pressureSettings + "]";
     }
+    @Override
+    public int hashCode() {
+        return 94;
+    }
 }

@@ -15,4 +15,8 @@ public class Router {
     public String toString() {
         return "Router [brand=" + brand + ", model=" + model + ", wifiStandard=" + wifiStandard + "]";
     }
+    @Override
+    public int hashCode() {
+        return 67;
+    }
 }

@@ -15,4 +15,8 @@ public class CampingStove {
     public String toString() {
         return "CampingStove [brand=" + brand + ", model=" + model + ", burners=" + burners + "]";
     }
+    @Override
+    public int hashCode() {
+        return 14;
+    }
 }

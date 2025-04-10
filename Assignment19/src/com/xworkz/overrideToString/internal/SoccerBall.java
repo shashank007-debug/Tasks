@@ -15,4 +15,8 @@ public class SoccerBall {
     public String toString() {
         return "SoccerBall [brand=" + brand + ", model=" + model + ", size=" + size + "]";
     }
+    @Override
+    public int hashCode() {
+        return 76;
+    }
 }

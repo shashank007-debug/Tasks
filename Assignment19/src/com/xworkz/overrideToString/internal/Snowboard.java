@@ -15,4 +15,8 @@ public class Snowboard {
     public String toString() {
         return "Snowboard [brand=" + brand + ", model=" + model + ", length=" + length + "cm]";
     }
+    @Override
+    public int hashCode() {
+        return 75;
+    }
 }

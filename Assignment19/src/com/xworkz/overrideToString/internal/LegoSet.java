@@ -15,4 +15,8 @@ public class LegoSet {
     public String toString() {
         return "LegoSet [theme=" + theme + ", name=" + name + ", pieces=" + pieces + "]";
     }
+    @Override
+    public int hashCode() {
+        return 51;
+    }
 }

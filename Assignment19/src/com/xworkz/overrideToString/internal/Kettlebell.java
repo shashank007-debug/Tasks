@@ -15,4 +15,8 @@ public class Kettlebell {
     public String toString() {
         return "Kettlebell [brand=" + brand + ", model=" + model + ", weight=" + weight + "lbs]";
     }
+    @Override
+    public int hashCode() {
+        return 49;
+    }
 }

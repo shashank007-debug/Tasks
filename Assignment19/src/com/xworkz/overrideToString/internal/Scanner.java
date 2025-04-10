@@ -15,4 +15,8 @@ public class Scanner {
     public String toString() {
         return "Scanner [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 68;
+    }
 }

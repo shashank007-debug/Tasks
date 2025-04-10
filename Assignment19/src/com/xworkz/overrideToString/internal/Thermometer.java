@@ -15,4 +15,8 @@ public class Thermometer {
     public String toString() {
         return "Thermometer [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 84;
+    }
 }

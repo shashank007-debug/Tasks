@@ -15,4 +15,8 @@ public class Telescope {
     public String toString() {
         return "Telescope [brand=" + brand + ", model=" + model + ", aperture=" + aperture + "mm]";
     }
+    @Override
+    public int hashCode() {
+        return 81;
+    }
 }

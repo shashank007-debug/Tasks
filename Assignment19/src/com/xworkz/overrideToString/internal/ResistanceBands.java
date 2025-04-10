@@ -15,4 +15,8 @@ public class ResistanceBands {
     public String toString() {
         return "ResistanceBands [brand=" + brand + ", model=" + model + ", resistanceLevels=" + resistanceLevels + "]";
     }
+    @Override
+    public int hashCode() {
+        return 65;
+    }
 }

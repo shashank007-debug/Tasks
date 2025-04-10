@@ -15,4 +15,8 @@ public class Backpack {
     public String toString() {
         return "Backpack [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "L]";
     }
+    @Override
+    public int hashCode() {
+        return 4;
+    }
 }

@@ -15,4 +15,9 @@ public class ActionFigure {
     public String toString() {
         return "ActionFigure [franchise=" + franchise + ", character=" + character + ", height=" + height + "in]";
     }
+
+    @Override
+    public int hashCode() {
+        return 1;
+    }
 }

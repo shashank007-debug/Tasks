@@ -15,4 +15,8 @@ public class FishingRod {
     public String toString() {
         return "FishingRod [brand=" + brand + ", model=" + model + ", length=" + length + "ft]";
     }
+    @Override
+    public int hashCode() {
+        return 32;
+    }
 }

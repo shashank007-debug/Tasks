@@ -15,4 +15,8 @@ public class Webcam {
     public String toString() {
         return "Webcam [brand=" + brand + ", model=" + model + ", resolution=" + resolution + "p]";
     }
+    @Override
+    public int hashCode() {
+        return 95;
+    }
 }

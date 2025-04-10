@@ -15,4 +15,8 @@ public class Kayak {
     public String toString() {
         return "Kayak [brand=" + brand + ", model=" + model + ", length=" + length + "ft]";
     }
+    @Override
+    public int hashCode() {
+        return 48;
+    }
 }

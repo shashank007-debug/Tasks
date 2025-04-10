@@ -15,4 +15,8 @@ public class DeskLamp {
     public String toString() {
         return "DeskLamp [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 19;
+    }
 }

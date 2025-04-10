@@ -15,4 +15,8 @@ public class DumbbellSet {
     public String toString() {
         return "DumbbellSet [brand=" + brand + ", model=" + model + ", maxWeight=" + maxWeight + "lbs]";
     }
+    @Override
+    public int hashCode() {
+        return 23;
+    }
 }

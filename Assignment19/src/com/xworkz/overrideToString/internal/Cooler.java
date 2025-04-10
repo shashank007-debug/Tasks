@@ -15,4 +15,8 @@ public class Cooler {
     public String toString() {
         return "Cooler [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "qt]";
     }
+    @Override
+    public int hashCode() {
+        return 17;
+    }
 }

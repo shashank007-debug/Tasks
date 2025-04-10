@@ -15,4 +15,8 @@ public class Notebook {
     public String toString() {
         return "Notebook [brand=" + brand + ", model=" + model + ", pageCount=" + pageCount + "]";
     }
+    @Override
+    public int hashCode() {
+        return 54;
+    }
 }

@@ -15,4 +15,8 @@ public class HairDryer {
     public String toString() {
         return "HairDryer [brand=" + brand + ", model=" + model + ", wattage=" + wattage + "W]";
     }
+    @Override
+    public int hashCode() {
+        return 42;
+    }
 }

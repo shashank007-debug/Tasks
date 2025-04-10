@@ -15,4 +15,8 @@ public class FoodProcessor {
     public String toString() {
         return "FoodProcessor [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "cup]";
     }
+    @Override
+    public int hashCode() {
+        return 35;
+    }
 }

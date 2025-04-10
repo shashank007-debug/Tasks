@@ -15,4 +15,8 @@ public class SmartLock {
     public String toString() {
         return "SmartLock [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 73;
+    }
 }

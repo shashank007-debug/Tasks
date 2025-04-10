@@ -15,4 +15,8 @@ public class FishingReel {
     public String toString() {
         return "FishingReel [brand=" + brand + ", model=" + model + ", gearRatio=" + gearRatio + ":1]";
     }
+    @Override
+    public int hashCode() {
+        return 31;
+    }
 }

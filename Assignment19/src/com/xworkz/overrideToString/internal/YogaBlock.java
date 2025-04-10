@@ -15,4 +15,8 @@ public class YogaBlock {
     public String toString() {
         return "YogaBlock [brand=" + brand + ", model=" + model + ", material=" + material + "]";
     }
+    @Override
+    public int hashCode() {
+        return 98;
+    }
 }

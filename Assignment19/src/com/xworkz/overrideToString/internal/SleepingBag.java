@@ -15,4 +15,8 @@ public class SleepingBag {
     public String toString() {
         return "SleepingBag [brand=" + brand + ", model=" + model + ", temperatureRating=" + temperatureRating + "°F]";
     }
+    @Override
+    public int hashCode() {
+        return 71;
+    }
 }

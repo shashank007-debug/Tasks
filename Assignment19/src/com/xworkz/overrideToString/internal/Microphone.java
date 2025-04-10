@@ -15,4 +15,8 @@ public class Microphone {
     public String toString() {
         return "Microphone [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+    @Override
+    public int hashCode() {
+        return 53;
+    }
 }

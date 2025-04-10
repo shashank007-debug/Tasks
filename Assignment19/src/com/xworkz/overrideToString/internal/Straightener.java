@@ -15,4 +15,8 @@ public class Straightener {
     public String toString() {
         return "Straightener [brand=" + brand + ", model=" + model + ", plateWidth=" + plateWidth + "in]";
     }
+    @Override
+    public int hashCode() {
+        return 78;
+    }
 }
