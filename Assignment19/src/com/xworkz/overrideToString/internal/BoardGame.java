@@ -20,4 +20,15 @@ public class BoardGame {
     public int hashCode() {
         return 10;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof BoardGame){
+                BoardGame obj1 = this;
+                BoardGame obj2 = (BoardGame) obj;
+                return(obj1.genre.equals(obj2.genre));
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,15 @@ public class Dumbbell {
     public int hashCode() {
         return 22;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Dumbbell){
+                Dumbbell obj1 = this;
+                Dumbbell obj2 = (Dumbbell) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

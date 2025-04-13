@@ -19,4 +19,15 @@ public class Binoculars {
     public int hashCode() {
         return 7;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Binoculars){
+                Binoculars obj1 = this;
+                Binoculars obj2 = (Binoculars) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

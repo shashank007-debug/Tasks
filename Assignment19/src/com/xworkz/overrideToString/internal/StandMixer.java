@@ -3,7 +3,7 @@ package com.xworkz.overrideToString.internal;
 public class StandMixer {
     private String brand;
     private String model;
-    private int speedSettings;
+    private float speedSettings;
 
     public StandMixer(String brand, String model, int speedSettings) {
         this.brand = brand;

@@ -19,4 +19,15 @@ public class CoffeeMaker {
     public int hashCode() {
         return 15;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof CoffeeMaker){
+                CoffeeMaker obj1 = this;
+                CoffeeMaker obj2 = (CoffeeMaker) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

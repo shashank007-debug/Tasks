@@ -19,4 +19,15 @@ public class Drone {
     public int hashCode() {
         return 20;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Drone){
+                Drone obj1 = this;
+                Drone obj2 = (Drone) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

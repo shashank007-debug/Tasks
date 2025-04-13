@@ -19,4 +19,15 @@ public class CurlingIron {
     public int hashCode() {
         return 18;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof CurlingIron){
+                CurlingIron obj1 = this;
+                CurlingIron obj2 = (CurlingIron) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

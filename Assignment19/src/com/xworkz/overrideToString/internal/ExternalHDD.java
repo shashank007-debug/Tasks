@@ -19,4 +19,15 @@ public class ExternalHDD {
     public int hashCode() {
         return 30;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof ExternalHDD ){
+                ExternalHDD obj1 = this;
+                ExternalHDD obj2 = (ExternalHDD) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

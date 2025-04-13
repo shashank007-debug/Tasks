@@ -19,4 +19,15 @@ public class ComputerMouse {
     public int hashCode() {
         return 16;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof ComputerMouse){
+                ComputerMouse obj1 = this;
+                ComputerMouse obj2 = (ComputerMouse) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

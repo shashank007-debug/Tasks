@@ -19,4 +19,15 @@ public class CampingStove {
     public int hashCode() {
         return 14;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof CampingStove){
+                CampingStove obj1 = this;
+                CampingStove obj2 = (CampingStove) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

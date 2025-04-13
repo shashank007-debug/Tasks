@@ -19,4 +19,15 @@ public class ExerciseBike {
     public int hashCode() {
         return 29;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof ExerciseBike){
+                ExerciseBike obj1 = this;
+                ExerciseBike obj2 = (ExerciseBike) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

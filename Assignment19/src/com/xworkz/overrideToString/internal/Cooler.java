@@ -19,4 +19,15 @@ public class Cooler {
     public int hashCode() {
         return 17;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Cooler ){
+                 Cooler obj1 = this;
+                 Cooler obj2 =  (Cooler) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

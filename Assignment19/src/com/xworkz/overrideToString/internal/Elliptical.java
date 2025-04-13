@@ -19,4 +19,15 @@ public class Elliptical {
     public int hashCode() {
         return 28;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Elliptical){
+                Elliptical obj1 = this;
+                Elliptical obj2 = (Elliptical) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

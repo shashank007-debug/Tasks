@@ -19,4 +19,15 @@ public class ElectricShaver {
     public int hashCode() {
         return 27;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof ElectricShaver){
+                ElectricShaver obj1 = this;
+                ElectricShaver obj2 = (ElectricShaver) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

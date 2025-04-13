@@ -20,4 +20,15 @@ public class BloodPressureMonitor {
     public int hashCode() {
         return 9;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof BloodPressureMonitor){
+                BloodPressureMonitor obj1 = this;
+                BloodPressureMonitor obj2 = (BloodPressureMonitor) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

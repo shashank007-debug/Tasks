@@ -19,4 +19,15 @@ public class AirFryer {
     public int hashCode() {
         return 2;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof AirFryer){
+                AirFryer airFryer1 = this;
+                AirFryer airFryer2 = (AirFryer) obj;
+                return (airFryer1.brand.equals(airFryer2.brand));
+            }
+        }
+        return false;
+    }
 }

@@ -20,4 +20,16 @@ public class ActionFigure {
     public int hashCode() {
         return 1;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof ActionFigure){
+                ActionFigure actionFigure1 = this;
+                ActionFigure actionFigue2 = (ActionFigure)obj;
+                return (actionFigure1.franchise.equals(actionFigue2.franchise));
+            }
+        }
+        return false;
+    }
 }

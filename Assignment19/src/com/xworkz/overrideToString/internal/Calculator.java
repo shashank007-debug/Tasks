@@ -19,4 +19,15 @@ public class Calculator {
     public int hashCode() {
         return 12;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Calculator){
+                Calculator obj1 = this;
+                Calculator obj2 = (Calculator) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

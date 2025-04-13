@@ -20,4 +20,15 @@ public class Blender {
     public int hashCode() {
         return 8;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Blender){
+                Blender obj1 = this;
+                Blender obj2 = (Blender) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

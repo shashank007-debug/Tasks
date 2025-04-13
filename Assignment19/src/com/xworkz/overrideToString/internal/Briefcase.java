@@ -19,4 +19,15 @@ public class Briefcase {
     public int hashCode() {
         return 11;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Briefcase){
+                Briefcase obj1 = this;
+                Briefcase obj2 = (Briefcase) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }

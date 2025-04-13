@@ -19,4 +19,15 @@ public class BaseballBat {
     public int hashCode() {
         return 5;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof BaseballBat){
+                BaseballBat baseballBat1 = this;
+                BaseballBat baseballBat2 = (BaseballBat) obj;
+                return(baseballBat1.model.equals(baseballBat2.model));
+            }
+        }
+        return false;
+    }
 }

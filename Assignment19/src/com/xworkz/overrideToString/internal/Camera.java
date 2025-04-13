@@ -19,4 +19,15 @@ public class Camera {
     public int hashCode() {
         return 13;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            if(obj instanceof Camera){
+                Camera obj1 = this;
+                Camera obj2 = (Camera) obj;
+                return(obj1.model.equals(obj2.model));
+            }
+        }
+        return false;
+    }
 }
