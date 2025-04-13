@@ -15,8 +15,20 @@ public class FoodProcessor {
     public String toString() {
         return "FoodProcessor [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "cup]";
     }
+
     @Override
     public int hashCode() {
         return 35;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof FoodProcessor) {
+                FoodProcessor other = (FoodProcessor) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

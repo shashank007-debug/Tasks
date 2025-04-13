@@ -15,8 +15,20 @@ public class PaperShredder {
     public String toString() {
         return "PaperShredder [brand=" + brand + ", model=" + model + ", sheetCapacity=" + sheetCapacity + "]";
     }
+
     @Override
     public int hashCode() {
         return 57;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof PaperShredder) {
+                PaperShredder other = (PaperShredder) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) ;
+            }
+        }
+        return false;
     }
 }

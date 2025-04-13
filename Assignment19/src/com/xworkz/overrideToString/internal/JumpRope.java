@@ -15,8 +15,20 @@ public class JumpRope {
     public String toString() {
         return "JumpRope [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+
     @Override
     public int hashCode() {
         return 47;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof JumpRope) {
+                JumpRope other = (JumpRope) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

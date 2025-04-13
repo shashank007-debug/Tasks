@@ -15,9 +15,20 @@ public class OfficeChair {
     public String toString() {
         return "OfficeChair [brand=" + brand + ", model=" + model + ", material=" + material + "]";
     }
+
     @Override
     public int hashCode() {
         return 55;
     }
-}
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof OfficeChair) {
+                OfficeChair other = (OfficeChair) obj;
+                return this.brand.equals(other.brand)&& this.material.equals(other.material);
+            }
+        }
+        return false;
+    }
+}

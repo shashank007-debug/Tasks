@@ -15,8 +15,20 @@ public class FishingRod {
     public String toString() {
         return "FishingRod [brand=" + brand + ", model=" + model + ", length=" + length + "ft]";
     }
+
     @Override
     public int hashCode() {
         return 32;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof FishingRod) {
+                FishingRod other = (FishingRod) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

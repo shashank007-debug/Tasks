@@ -15,8 +15,20 @@ public class MassageGun {
     public String toString() {
         return "MassageGun [brand=" + brand + ", model=" + model + ", speedSettings=" + speedSettings + "]";
     }
+
     @Override
     public int hashCode() {
         return 52;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof MassageGun) {
+                MassageGun other = (MassageGun) obj;
+                return this.brand.equals(other.brand) && this.speedSettings == other.speedSettings;
+            }
+        }
+        return false;
     }
 }

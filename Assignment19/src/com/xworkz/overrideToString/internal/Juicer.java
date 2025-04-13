@@ -15,8 +15,20 @@ public class Juicer {
     public String toString() {
         return "Juicer [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+
     @Override
     public int hashCode() {
         return 46;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Juicer) {
+                Juicer other = (Juicer) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

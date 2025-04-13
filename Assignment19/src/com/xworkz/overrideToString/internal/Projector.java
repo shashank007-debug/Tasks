@@ -13,10 +13,22 @@ public class Projector {
 
     @Override
     public String toString() {
-        return "Projector [brand=" + brand + ", model=" + model + ", brightness=" + brightness + "lumens]";
+        return "Projector [brand=" + brand + ", model=" + model + ", brightness=" + brightness + " lumens]";
     }
+
     @Override
     public int hashCode() {
         return 60;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Projector) {
+                Projector other = (Projector) obj;
+                return this.brand.equals(other.brand) && this.brightness == other.brightness;
+            }
+        }
+        return false;
     }
 }

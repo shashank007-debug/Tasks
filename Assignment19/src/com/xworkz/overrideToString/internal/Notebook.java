@@ -15,8 +15,20 @@ public class Notebook {
     public String toString() {
         return "Notebook [brand=" + brand + ", model=" + model + ", pageCount=" + pageCount + "]";
     }
+
     @Override
     public int hashCode() {
         return 54;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Notebook) {
+                Notebook other = (Notebook) obj;
+                return this.brand.equals(other.brand)&& this.pageCount == other.pageCount;
+            }
+        }
+        return false;
     }
 }

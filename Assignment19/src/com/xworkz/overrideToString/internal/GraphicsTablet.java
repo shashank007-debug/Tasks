@@ -15,8 +15,20 @@ public class GraphicsTablet {
     public String toString() {
         return "GraphicsTablet [brand=" + brand + ", model=" + model + ", size=" + size + "]";
     }
+
     @Override
     public int hashCode() {
         return 40;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof GraphicsTablet) {
+                GraphicsTablet other = (GraphicsTablet) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

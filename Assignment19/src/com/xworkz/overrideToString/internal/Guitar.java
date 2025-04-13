@@ -15,8 +15,20 @@ public class Guitar {
     public String toString() {
         return "Guitar [brand=" + brand + ", model=" + model + ", strings=" + strings + "]";
     }
+
     @Override
     public int hashCode() {
         return 41;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Guitar) {
+                Guitar other = (Guitar) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

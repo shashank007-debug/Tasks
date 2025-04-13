@@ -15,8 +15,20 @@ public class Humidifier {
     public String toString() {
         return "Humidifier [brand=" + brand + ", model=" + model + ", tankSize=" + tankSize + "L]";
     }
+
     @Override
     public int hashCode() {
         return 45;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Humidifier) {
+                Humidifier other = (Humidifier) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

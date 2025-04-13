@@ -15,8 +15,20 @@ public class Headphones {
     public String toString() {
         return "Headphones [brand=" + brand + ", model=" + model + ", wireless=" + wireless + "]";
     }
+
     @Override
     public int hashCode() {
         return 44;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Headphones) {
+                Headphones other = (Headphones) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

@@ -15,8 +15,20 @@ public class Keyboard {
     public String toString() {
         return "Keyboard [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+
     @Override
     public int hashCode() {
         return 50;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Keyboard) {
+                Keyboard other = (Keyboard) obj;
+                return this.brand.equals(other.brand) && this.type.equals(other.type);
+            }
+        }
+        return false;
     }
 }

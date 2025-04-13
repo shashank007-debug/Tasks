@@ -15,8 +15,20 @@ public class PaddleBoard {
     public String toString() {
         return "PaddleBoard [brand=" + brand + ", model=" + model + ", length=" + length + "ft]";
     }
+
     @Override
     public int hashCode() {
         return 56;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof PaddleBoard) {
+                PaddleBoard other = (PaddleBoard) obj;
+                return this.brand.equals(other.brand)&& this.length == other.length;
+            }
+        }
+        return false;
     }
 }

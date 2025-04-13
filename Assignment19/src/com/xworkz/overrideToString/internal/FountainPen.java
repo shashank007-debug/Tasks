@@ -15,8 +15,20 @@ public class FountainPen {
     public String toString() {
         return "FountainPen [brand=" + brand + ", model=" + model + ", nibSize=" + nibSize + "]";
     }
+
     @Override
     public int hashCode() {
         return 36;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof FountainPen) {
+                FountainPen other = (FountainPen) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

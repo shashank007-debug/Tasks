@@ -15,8 +15,20 @@ public class Kettlebell {
     public String toString() {
         return "Kettlebell [brand=" + brand + ", model=" + model + ", weight=" + weight + "lbs]";
     }
+
     @Override
     public int hashCode() {
         return 49;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Kettlebell) {
+                Kettlebell other = (Kettlebell) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

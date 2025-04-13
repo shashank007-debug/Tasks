@@ -15,8 +15,20 @@ public class Kayak {
     public String toString() {
         return "Kayak [brand=" + brand + ", model=" + model + ", length=" + length + "ft]";
     }
+
     @Override
     public int hashCode() {
         return 48;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Kayak) {
+                Kayak other = (Kayak) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
     }
 }

@@ -343,7 +343,9 @@ public class Runner {
         System.out.println(reel2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(reel2));
         System.out.println("Default Hash Code: " + reel2.hashCode());
+        System.out.println("Is Two instances same ? : "+reel1.equals(reel2));
         System.out.println("====================================================================");
+
         FishingRod fishingRod1 = new FishingRod("Shimano", "Stella", 7);
         System.out.println(fishingRod1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(fishingRod1));
@@ -353,7 +355,9 @@ public class Runner {
         System.out.println(fishingRod2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(fishingRod2));
         System.out.println("Default Hash Code: " + fishingRod2.hashCode());
+        System.out.println("Is Two instances same ? : "+fishingRod1.equals(fishingRod2));
         System.out.println("====================================================================");
+
         FlashDrive flashDrive1 = new FlashDrive("SanDisk", "Ultra Fit", 128);
         System.out.println(flashDrive1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(flashDrive1));
@@ -363,7 +367,9 @@ public class Runner {
         System.out.println(flashDrive2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(flashDrive2));
         System.out.println("Default Hash Code: " + flashDrive2.hashCode());
+        System.out.println("Is Two instances same ? : "+flashDrive1.equals(flashDrive2));
         System.out.println("====================================================================");
+
         FoamRoller roller1 = new FoamRoller("TriggerPoint", "Grid", "High Density");
         System.out.println(roller1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(roller1));
@@ -373,7 +379,9 @@ public class Runner {
         System.out.println(roller2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(roller2));
         System.out.println("Default Hash Code: " + roller2.hashCode());
+        System.out.println("Is Two instances same ? : "+roller1.equals(roller2));
         System.out.println("====================================================================");
+
         FoodProcessor foodProcessor1 = new FoodProcessor("Cuisinart", "DFP-14BCNY", 14);
         System.out.println(foodProcessor1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(foodProcessor1));
@@ -383,7 +391,9 @@ public class Runner {
         System.out.println(foodProcessor2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(foodProcessor2));
         System.out.println("Default Hash Code: " + foodProcessor2.hashCode());
+        System.out.println("Is Two instances same ? : "+foodProcessor1.equals(foodProcessor2));
         System.out.println("====================================================================");
+
         FountainPen pen1 = new FountainPen("Montblanc", "Meisterstück", "Gold");
         System.out.println(pen1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(pen1));
@@ -393,7 +403,9 @@ public class Runner {
         System.out.println(pen2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(pen2));
         System.out.println("Default Hash Code: " + pen2.hashCode());
+        System.out.println("Is Two instances same ? : "+pen1.equals(pen2));
         System.out.println("====================================================================");
+
         GamingConsole console1 = new GamingConsole("Sony", "PlayStation 5", "Digital");
         System.out.println(console1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(console1));
@@ -403,7 +415,9 @@ public class Runner {
         System.out.println(console2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(console2));
         System.out.println("Default Hash Code: " + console2.hashCode());
+        System.out.println("Is Two instances same ? : "+console1.equals(console2));
         System.out.println("====================================================================");
+
         GamingController controller1 = new GamingController("Microsoft", "Xbox Elite", "Wireless");
         System.out.println(controller1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(controller1));
@@ -413,6 +427,7 @@ public class Runner {
         System.out.println(controller2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(controller2));
         System.out.println("Default Hash Code: " + controller2.hashCode());
+        System.out.println("Is Two instances same ? : "+controller1.equals(controller2));
         System.out.println("====================================================================");
 
         GolfClub golfClub1 = new GolfClub("Callaway", "Mavrik", "Driver");
@@ -424,7 +439,9 @@ public class Runner {
         System.out.println(golfClub2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(golfClub2));
         System.out.println("Default Hash Code: " + golfClub2.hashCode());
+        System.out.println("Is Two instances same ? : "+golfClub1.equals(golfClub2));
         System.out.println("====================================================================");
+
         GraphicsTablet tablet1 = new GraphicsTablet("Wacom", "Intuos", "Medium");
         System.out.println(tablet1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(tablet1));
@@ -434,7 +451,9 @@ public class Runner {
         System.out.println(tablet2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(tablet2));
         System.out.println("Default Hash Code: " + tablet2.hashCode());
+        System.out.println("Is Two instances same ? : "+tablet1.equals(tablet2));
         System.out.println("====================================================================");
+
         Guitar guitar1 = new Guitar("Fender", "Stratocaster", 6);
         System.out.println(guitar1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(guitar1));
@@ -444,7 +463,9 @@ public class Runner {
         System.out.println(guitar2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(guitar2));
         System.out.println("Default Hash Code: " + guitar2.hashCode());
+        System.out.println("Is Two instances same ? : "+guitar1.equals(guitar2));
         System.out.println("====================================================================");
+
         HairDryer hairDryer1 = new HairDryer("Dyson", "Supersonic", 1875);
         System.out.println(hairDryer1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(hairDryer1));
@@ -454,7 +475,9 @@ public class Runner {
         System.out.println(hairDryer2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(hairDryer2));
         System.out.println("Default Hash Code: " + hairDryer2.hashCode());
+        System.out.println("Is Two instances same ? : "+hairDryer1.equals(hairDryer2));
         System.out.println("====================================================================");
+
         Hammock hammock1 = new Hammock("ENO", "DoubleNest", 400);
         System.out.println(hammock1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(hammock1));
@@ -464,7 +487,9 @@ public class Runner {
         System.out.println(hammock2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(hammock2));
         System.out.println("Default Hash Code: " + hammock2.hashCode());
+        System.out.println("Is Two instances same ? : "+hammock1.equals(hammock2));
         System.out.println("====================================================================");
+
         Headphones headphones1 = new Headphones("Sony", "WH-1000XM5", true);
         System.out.println(headphones1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(headphones1));
@@ -474,7 +499,9 @@ public class Runner {
         System.out.println(headphones2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(headphones2));
         System.out.println("Default Hash Code: " + headphones2.hashCode());
+        System.out.println("Is Two instances same ? : "+headphones1.equals(headphones2));
         System.out.println("====================================================================");
+
         Humidifier humidifier1 = new Humidifier("Honeywell", "HEV685", 1.5);
         System.out.println(humidifier1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(humidifier1));
@@ -484,7 +511,9 @@ public class Runner {
         System.out.println(humidifier2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(humidifier2));
         System.out.println("Default Hash Code: " + humidifier2.hashCode());
+        System.out.println("Is Two instances same ? : "+humidifier1.equals(humidifier2));
         System.out.println("====================================================================");
+
         JumpRope jumpRope1 = new JumpRope("Crossrope", "Get Lean", "Weighted");
         System.out.println(jumpRope1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(jumpRope1));
@@ -494,7 +523,9 @@ public class Runner {
         System.out.println(jumpRope2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(jumpRope2));
         System.out.println("Default Hash Code: " + jumpRope2.hashCode());
+        System.out.println("Is Two instances same ? : "+jumpRope1.equals(jumpRope2));
         System.out.println("====================================================================");
+
         Juicer juicer1 = new Juicer("Omega", "NC900HDC", "Cold Press");
         System.out.println(juicer1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(juicer1));
@@ -504,7 +535,9 @@ public class Runner {
         System.out.println(juicer2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(juicer2));
         System.out.println("Default Hash Code: " + juicer2.hashCode());
+        System.out.println("Is Two instances same ? : "+juicer1.equals(juicer2));
         System.out.println("====================================================================");
+
         Kettlebell kettlebell1 = new Kettlebell("CAP", "Enamel Coated", 35);
         System.out.println(kettlebell1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(kettlebell1));
@@ -514,7 +547,9 @@ public class Runner {
         System.out.println(kettlebell2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(kettlebell2));
         System.out.println("Default Hash Code: " + kettlebell2.hashCode());
+        System.out.println("Is Two instances same ? : "+kettlebell1.equals(kettlebell2));
         System.out.println("====================================================================");
+
         Keyboard keyboard1 = new Keyboard("Logitech", "MX Keys", "Wireless");
         System.out.println(keyboard1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(keyboard1));
@@ -524,7 +559,9 @@ public class Runner {
         System.out.println(keyboard2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(keyboard2));
         System.out.println("Default Hash Code: " + keyboard2.hashCode());
+        System.out.println("Is Two instances same ? : "+keyboard1.equals(keyboard2));
         System.out.println("====================================================================");
+
         Kayak kayak1 = new Kayak("Pelican", "Mirage", 10);
         System.out.println(kayak1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(kayak1));
@@ -534,7 +571,9 @@ public class Runner {
         System.out.println(kayak2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(kayak2));
         System.out.println("Default Hash Code: " + kayak2.hashCode());
+        System.out.println("Is Two instances same ? : "+kayak1.equals(kayak2));
         System.out.println("====================================================================");
+
         LegoSet lego1 = new LegoSet("Star Wars", "Millennium Falcon", 7541);
         System.out.println(lego1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(lego1));
@@ -544,7 +583,9 @@ public class Runner {
         System.out.println(lego2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(lego2));
         System.out.println("Default Hash Code: " + lego2.hashCode());
+        System.out.println("Is Two instances same ? : "+lego1.equals(lego2));
         System.out.println("====================================================================");
+
         MassageGun massageGun1 = new MassageGun("Theragun", "Prime", 5);
         System.out.println(massageGun1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(massageGun1));
@@ -554,7 +595,9 @@ public class Runner {
         System.out.println(massageGun2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(massageGun2));
         System.out.println("Default Hash Code: " + massageGun2.hashCode());
+        System.out.println("Is Two instances same ? : "+massageGun1.equals(massageGun2));
         System.out.println("====================================================================");
+
         Microphone microphone1 = new Microphone("Blue", "Yeti", "USB");
         System.out.println(microphone1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(microphone1));
@@ -564,7 +607,9 @@ public class Runner {
         System.out.println(microphone2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(microphone2));
         System.out.println("Default Hash Code: " + microphone2.hashCode());
+        System.out.println("Is Two instances same ? : "+microphone1.equals(microphone2));
         System.out.println("====================================================================");
+
         Notebook notebook1 = new Notebook("Moleskine", "Classic", 240);
         System.out.println(notebook1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(notebook1));
@@ -574,7 +619,9 @@ public class Runner {
         System.out.println(notebook2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(notebook2));
         System.out.println("Default Hash Code: " + notebook2.hashCode());
+        System.out.println("Is Two instances same ? : "+notebook1.equals(notebook2));
         System.out.println("====================================================================");
+
         OfficeChair chair1 = new OfficeChair("Herman Miller", "Aeron", "Mesh");
         System.out.println(chair1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(chair1));
@@ -584,7 +631,9 @@ public class Runner {
         System.out.println(chair2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(chair2));
         System.out.println("Default Hash Code: " + chair2.hashCode());
+        System.out.println("Is Two instances same ? : "+chair1.equals(chair2));
         System.out.println("====================================================================");
+
         PaddleBoard paddleBoard1 = new PaddleBoard("iROCKER", "Cruiser", 11);
         System.out.println(paddleBoard1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(paddleBoard1));
@@ -594,27 +643,33 @@ public class Runner {
         System.out.println(paddleBoard2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(paddleBoard2));
         System.out.println("Default Hash Code: " + paddleBoard2.hashCode());
+        System.out.println("Is Two instances same ? : "+paddleBoard1.equals(paddleBoard2));
         System.out.println("====================================================================");
+
         PaperShredder shredder1 = new PaperShredder("Fellowes", "62MC", 12);
         System.out.println(shredder1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(shredder1));
         System.out.println("Default Hash Code: " + shredder1.hashCode());
         System.out.println("====================================================================");
-        PaperShredder shredder2 = new PaperShredder("AmazonBasics", "6-Sheet", 8);
+        PaperShredder shredder2 = new PaperShredder("Fellowes", "62MC", 12);
         System.out.println(shredder2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(shredder2));
         System.out.println("Default Hash Code: " + shredder2.hashCode());
+        System.out.println("Is Two instances same ? : "+shredder1.equals(shredder2));
         System.out.println("====================================================================");
+
         Plant plant1 = new Plant("Monstera", "Deliciosa", "Indoor");
         System.out.println(plant1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(plant1));
         System.out.println("Default Hash Code: " + plant1.hashCode());
         System.out.println("====================================================================");
-        Plant plant2 = new Plant("Ficus", "Lyrata", "Indoor");
+        Plant plant2 = new Plant("Monstera", "Deliciosa", "Indoor");
         System.out.println(plant2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(plant2));
         System.out.println("Default Hash Code: " + plant2.hashCode());
+        System.out.println("Is Two instances same ? : "+plant1.equals(plant2));
         System.out.println("====================================================================");
+
         Printer printer1 = new Printer("HP", "OfficeJet", "Inkjet");
         System.out.println(printer1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(printer1));
@@ -624,17 +679,21 @@ public class Runner {
         System.out.println(printer2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(printer2));
         System.out.println("Default Hash Code: " + printer2.hashCode());
+        System.out.println("Is Two instances same ? : "+printer1.equals(printer2));
         System.out.println("====================================================================");
+
         Projector projector1 = new Projector("Epson", "Home Cinema", 4000);
         System.out.println(projector1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(projector1));
         System.out.println("Default Hash Code: " + projector1.hashCode());
         System.out.println("====================================================================");
-        Projector projector2 = new Projector("BenQ", "HT3550", 2000);
+        Projector projector2 = new Projector("Epson", "Home Cinema", 4000);
         System.out.println(projector2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(projector2));
         System.out.println("Default Hash Code: " + projector2.hashCode());
+        System.out.println("Is Two instances same ? : "+projector1.equals(projector2));
         System.out.println("====================================================================");
+
         PunchingBag punchingBag1 = new PunchingBag("Everlast", "PowerCore", 70);
         System.out.println(punchingBag1);
         System.out.println("Generated Hash Code: " + System.identityHashCode(punchingBag1));
@@ -660,7 +719,7 @@ public class Runner {
         System.out.println("Generated Hash Code: " + System.identityHashCode(puzzle1));
         System.out.println("Default Hash Code: " + puzzle1.hashCode());
         System.out.println("====================================================================");
-        Puzzle puzzle2 = new Puzzle("Buffalo Games", "National Parks", 2000);
+        Puzzle puzzle2 = new Puzzle("Ravensburger", "Disney", 1000);
         System.out.println(puzzle2);
         System.out.println("Generated Hash Code: " + System.identityHashCode(puzzle2));
         System.out.println("Default Hash Code: " + puzzle2.hashCode());

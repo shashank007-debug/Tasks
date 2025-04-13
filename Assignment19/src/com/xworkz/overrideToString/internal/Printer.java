@@ -15,8 +15,20 @@ public class Printer {
     public String toString() {
         return "Printer [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+
     @Override
     public int hashCode() {
         return 59;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Printer) {
+                Printer other = (Printer) obj;
+                return this.brand.equals(other.brand) && this.type.equals(other.type);
+            }
+        }
+        return false;
     }
 }

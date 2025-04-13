@@ -19,4 +19,14 @@ public class Hammock {
     public int hashCode() {
         return 43;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Hammock) {
+                Hammock other = (Hammock) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model);
+            }
+        }
+        return false;
+    }
 }
