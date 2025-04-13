@@ -15,8 +15,20 @@ public class SoccerBall {
     public String toString() {
         return "SoccerBall [brand=" + brand + ", model=" + model + ", size=" + size + "]";
     }
+
     @Override
     public int hashCode() {
         return 76;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SoccerBall) {
+                SoccerBall other = (SoccerBall) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.size == other.size;
+            }
+        }
+        return false;
     }
 }

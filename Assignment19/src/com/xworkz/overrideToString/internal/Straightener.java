@@ -15,8 +15,20 @@ public class Straightener {
     public String toString() {
         return "Straightener [brand=" + brand + ", model=" + model + ", plateWidth=" + plateWidth + "in]";
     }
+
     @Override
     public int hashCode() {
         return 78;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Straightener) {
+                Straightener other = (Straightener) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.plateWidth == other.plateWidth;
+            }
+        }
+        return false;
     }
 }

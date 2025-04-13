@@ -15,8 +15,20 @@ public class TennisRacket {
     public String toString() {
         return "TennisRacket [brand=" + brand + ", model=" + model + ", headSize=" + headSize + "sq in]";
     }
+
     @Override
     public int hashCode() {
         return 82;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof TennisRacket) {
+                TennisRacket other = (TennisRacket) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.headSize == other.headSize;
+            }
+        }
+        return false;
     }
 }

@@ -15,8 +15,18 @@ public class WeightBench {
     public String toString() {
         return "WeightBench [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+
     @Override
     public int hashCode() {
-        return 96;
+        return 31 * brand.hashCode() + 17 * model.hashCode() + 13 * type.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof WeightBench) {
+            WeightBench other = (WeightBench) obj;
+            return this.brand.equals(other.brand) && this.model.equals(other.model) && this.type.equals(other.type);
+        }
+        return false;
     }
 }

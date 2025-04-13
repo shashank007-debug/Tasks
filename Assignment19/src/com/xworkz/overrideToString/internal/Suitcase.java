@@ -15,8 +15,20 @@ public class Suitcase {
     public String toString() {
         return "Suitcase [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "L]";
     }
+
     @Override
     public int hashCode() {
         return 79;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Suitcase) {
+                Suitcase other = (Suitcase) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.capacity == other.capacity;
+            }
+        }
+        return false;
     }
 }

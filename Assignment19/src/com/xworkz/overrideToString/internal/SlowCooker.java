@@ -15,8 +15,20 @@ public class SlowCooker {
     public String toString() {
         return "SlowCooker [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "qt]";
     }
+
     @Override
     public int hashCode() {
         return 72;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SlowCooker) {
+                SlowCooker other = (SlowCooker) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.capacity == other.capacity;
+            }
+        }
+        return false;
     }
 }

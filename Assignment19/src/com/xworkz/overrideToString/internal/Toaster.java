@@ -15,8 +15,20 @@ public class Toaster {
     public String toString() {
         return "Toaster [brand=" + brand + ", model=" + model + ", slots=" + slots + "]";
     }
+
     @Override
     public int hashCode() {
         return 85;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Toaster) {
+                Toaster other = (Toaster) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.slots == other.slots;
+            }
+        }
+        return false;
     }
 }

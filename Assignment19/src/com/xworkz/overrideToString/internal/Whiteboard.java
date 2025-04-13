@@ -15,8 +15,18 @@ public class Whiteboard {
     public String toString() {
         return "Whiteboard [brand=" + brand + ", model=" + model + ", size=" + size + "in]";
     }
+
     @Override
     public int hashCode() {
-        return 97;
+        return 31 * brand.hashCode() + 17 * model.hashCode() + 13 * Integer.hashCode(size);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Whiteboard) {
+            Whiteboard other = (Whiteboard) obj;
+            return this.brand.equals(other.brand) && this.model.equals(other.model) && this.size == other.size;
+        }
+        return false;
     }
 }

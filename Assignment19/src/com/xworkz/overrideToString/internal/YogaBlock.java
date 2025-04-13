@@ -15,8 +15,18 @@ public class YogaBlock {
     public String toString() {
         return "YogaBlock [brand=" + brand + ", model=" + model + ", material=" + material + "]";
     }
+
     @Override
     public int hashCode() {
-        return 98;
+        return 31 * brand.hashCode() + 17 * model.hashCode() + 13 * material.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof YogaBlock) {
+            YogaBlock other = (YogaBlock) obj;
+            return this.brand.equals(other.brand) && this.model.equals(other.model) && this.material.equals(other.material);
+        }
+        return false;
     }
 }

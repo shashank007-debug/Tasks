@@ -15,8 +15,20 @@ public class Snowboard {
     public String toString() {
         return "Snowboard [brand=" + brand + ", model=" + model + ", length=" + length + "cm]";
     }
+
     @Override
     public int hashCode() {
         return 75;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Snowboard) {
+                Snowboard other = (Snowboard) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.length == other.length;
+            }
+        }
+        return false;
     }
 }

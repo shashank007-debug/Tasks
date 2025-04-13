@@ -15,8 +15,20 @@ public class VRHeadset {
     public String toString() {
         return "VRHeadset [brand=" + brand + ", model=" + model + ", storage=" + storage + "GB]";
     }
+
     @Override
     public int hashCode() {
         return 90;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof VRHeadset) {
+                VRHeadset other = (VRHeadset) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.storage == other.storage;
+            }
+        }
+        return false;
     }
 }

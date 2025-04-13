@@ -15,8 +15,20 @@ public class PunchingGloves {
     public String toString() {
         return "PunchingGloves [brand=" + brand + ", model=" + model + ", size=" + size + "oz]";
     }
+
     @Override
     public int hashCode() {
         return 62;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof PunchingGloves) {
+                PunchingGloves other = (PunchingGloves) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.size == other.size;
+            }
+        }
+        return false;
     }
 }

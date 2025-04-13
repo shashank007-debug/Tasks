@@ -15,8 +15,20 @@ public class Tent {
     public String toString() {
         return "Tent [brand=" + brand + ", model=" + model + ", capacity=" + capacity + " people]";
     }
+
     @Override
     public int hashCode() {
         return 83;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Tent) {
+                Tent other = (Tent) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.capacity == other.capacity;
+            }
+        }
+        return false;
     }
 }

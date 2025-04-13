@@ -15,8 +15,20 @@ public class SleepingBag {
     public String toString() {
         return "SleepingBag [brand=" + brand + ", model=" + model + ", temperatureRating=" + temperatureRating + "°F]";
     }
+
     @Override
     public int hashCode() {
         return 71;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SleepingBag) {
+                SleepingBag other = (SleepingBag) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.temperatureRating == other.temperatureRating;
+            }
+        }
+        return false;
     }
 }

@@ -15,8 +15,20 @@ public class SmartThermostat {
     public String toString() {
         return "SmartThermostat [brand=" + brand + ", model=" + model + ", connectivity=" + connectivity + "]";
     }
+
     @Override
     public int hashCode() {
         return 74;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof SmartThermostat) {
+                SmartThermostat other = (SmartThermostat) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.connectivity.equals(other.connectivity);
+            }
+        }
+        return false;
     }
 }

@@ -15,8 +15,20 @@ public class Wallet {
     public String toString() {
         return "Wallet [brand=" + brand + ", model=" + model + ", cardSlots=" + cardSlots + "]";
     }
+
     @Override
     public int hashCode() {
         return 91;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Wallet) {
+                Wallet other = (Wallet) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.cardSlots == other.cardSlots;
+            }
+        }
+        return false;
     }
 }

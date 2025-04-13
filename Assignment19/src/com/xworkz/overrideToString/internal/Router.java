@@ -15,8 +15,20 @@ public class Router {
     public String toString() {
         return "Router [brand=" + brand + ", model=" + model + ", wifiStandard=" + wifiStandard + "]";
     }
+
     @Override
     public int hashCode() {
         return 67;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Router) {
+                Router other = (Router) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.wifiStandard.equals(other.wifiStandard);
+            }
+        }
+        return false;
     }
 }

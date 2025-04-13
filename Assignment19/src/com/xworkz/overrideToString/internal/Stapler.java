@@ -15,8 +15,20 @@ public class Stapler {
     public String toString() {
         return "Stapler [brand=" + brand + ", model=" + model + ", capacity=" + capacity + "]";
     }
+
     @Override
     public int hashCode() {
         return 77;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Stapler) {
+                Stapler other = (Stapler) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.capacity == other.capacity;
+            }
+        }
+        return false;
     }
 }

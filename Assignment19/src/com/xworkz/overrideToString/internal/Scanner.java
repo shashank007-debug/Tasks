@@ -15,8 +15,20 @@ public class Scanner {
     public String toString() {
         return "Scanner [brand=" + brand + ", model=" + model + ", type=" + type + "]";
     }
+
     @Override
     public int hashCode() {
         return 68;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Scanner) {
+                Scanner other = (Scanner) obj;
+                return this.brand.equals(other.brand) && this.model.equals(other.model) && this.type.equals(other.type);
+            }
+        }
+        return false;
     }
 }
